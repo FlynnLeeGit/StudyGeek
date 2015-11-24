@@ -1,0 +1,37 @@
+//career path style
+.career-path-area{
+    @include flexParent();
+    
+    .career-box{
+        @include flexChild(1);
+        text-align: center;
+        border: 1px solid $lightgray2;
+        height: 300px;
+        @include margin(right,-1);
+        @include margin(bottom,-1);
+        .c-tx {
+            overflow: hidden;
+        }
+        .c-title {
+            font-size: 15px;
+            padding: 20px 0;
+        }
+        .c-desc {
+            line-height: 18px;
+            @include margin(bottom,23);
+        }
+        .btn {
+            font-size: 16px;
+            width: 135px;
+        }
+        &:hover{
+            cursor: pointer;
+            border-color: $majorColor;
+            z-index: 4;
+        }
+        &:hover .btn{
+            background: $majorColor;
+            color: $white;
+        }
+    }
+}

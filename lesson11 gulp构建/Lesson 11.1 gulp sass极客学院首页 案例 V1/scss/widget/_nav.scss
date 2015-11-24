@@ -1,0 +1,29 @@
+//nav stylesheet
+
+.nav-wrap{
+    width: $pageWidth;
+    margin: 0 auto;
+    position: relative;
+    a{
+        font-size: 14px;
+    }
+    .n-first-a {
+        @include margin(right,20);
+    }
+    .n-a{
+        margin: 0 20px;
+    }
+    .mem{
+        position: absolute;
+        right: 0;
+        top: 0;
+        .icon{
+            vertical-align: middle;
+        }
+        a{
+            font-size: 12px;
+            @include margin(left,22);
+        }
+    }
+}
+

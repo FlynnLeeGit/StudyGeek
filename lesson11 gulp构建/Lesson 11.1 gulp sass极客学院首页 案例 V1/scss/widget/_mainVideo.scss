@@ -1,0 +1,126 @@
+//homepage video stylesheet
+$hoverTime:0.6s;  
+
+.main-video-area {
+  position: relative;
+  @include margin(top, 30);
+  height: 538px;
+
+  .vsub2, .v-sub3, .v-sub4, .v-sub5, .v-sub6 {
+    display: none;
+  }
+
+  .main-labels {
+    height: 42px;
+    line-height: 42px;
+    @include flexParent();
+    text-align: center;
+    a {
+      display: block;
+      font-size: 14px;
+      position: relative;
+      @include flexChild(1);
+      @include border(bottom, 2, $lightgray2);
+    }
+    .active {
+      color: $majorColor;
+      @include border(bottom, 2, $majorColor);
+      @include tabActiveArrow(42px, 10, 5, $majorColor);
+    }
+  }
+
+  .subvideo {
+    width: $pageWidth;
+    position: absolute;
+    left: 0;
+    top: 63px;
+
+    @for $i from 1 to 5 {             
+      .video-box:nth-of-type(#{$i}) {
+        left: #{($i - 1)*255}px;
+        top: 0;
+        z-index: 3;
+      }
+    }
+
+    @for $i from 5 to 9 {
+      .video-box:nth-of-type(#{$i}) {
+        left: #{($i - 5)*255}px;
+        top: 235px;
+        z-index: 2;
+      }
+    }
+
+    .video-box {
+      position: absolute;
+      width: 233px;
+      height: 217px;
+      border: 1px solid $lightgray;
+      background: $white;
+      @include autopre(transition, all $hoverTime);
+
+      .video {
+        width: 233px;
+        height: 132px;
+      }
+
+      .v-content {
+        padding: 6px 10px;
+        position: relative;
+
+      }
+      .v-title {
+        font-size: 14px;
+        height: 48px;
+      }
+
+      .v-desc {
+        height: 54px;
+        @include margin(bottom, 5);
+        overflow: hidden;
+        opacity: 0;
+        @include autopre(transition, all $hoverTime + 0.2s);
+      }
+
+      .v-time {
+        font-size: 12px;
+        position: absolute;
+        top: 60px;
+        @include autopre(transition, all $hoverTime);
+
+        .icon {
+          vertical-align: middle;
+        }
+        .icon-cloud {
+          float: right;
+        }
+      }
+
+      &:hover {
+        z-index: 4;
+        cursor: pointer;
+        height: 290px;
+        @include autopre(transition, all $hoverTime);
+      }
+      &:hover > .video::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 235px;
+        height: 130px;
+        left: 0;
+        top: 0;
+        opacity: 0.5;
+        background: #898989 url(../img/play.png) no-repeat center center;
+      }
+      &:hover > .v-content > .v-desc {
+        @include autopre(transition, all $hoverTime);
+        opacity: 1;
+      }
+      &:hover > .v-content > .v-time {
+        @include autopre(transition, all $hoverTime);
+        top: 130px;
+      }
+    }
+  }
+}

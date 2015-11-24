@@ -1,0 +1,82 @@
+//main_asde menu list stylesheet 
+.aside{
+  width: 208px;
+  height: $mainHeight;
+  @include border(top,2,$secondColor);
+  position: absolute;
+  z-index: 6;
+
+  .list-more{
+    display: none;
+  }
+
+  .asideMenuList{
+    position: relative;
+    padding: 10px 10px 9px 15px;
+    border: 1px solid $lightgray;
+    @include border(top,0);
+    background: $white;
+
+    .icon-tiny-arrow{
+      float: right;
+      vertical-align: top;
+    }
+
+    &:hover{
+      @include border(right,0);
+      padding-left: 20px;
+      color:$majorColor;
+      cursor: default;
+      @include border(left,2,$majorColor);
+    }
+    &:hover>.icon-tiny-arrow{
+      display: none;
+    }
+  }
+
+
+  .asideSubMenu{
+    display: none;
+    z-index: 6;
+    background:$white;
+    position: absolute;
+    left: 208px;
+    top: -2px;
+    width: 400px;
+    height: 406px;
+    border: 1px solid $lightgray;
+    @include border(left,0);
+    box-shadow: 1px 1px 2px $lightgray;
+    padding: 0 16px;
+
+    .asideSubMenu__title{
+      padding: 14px 0 6px;
+      &:hover{
+        color: $secondColor;
+        cursor: pointer;
+      }
+    }
+    .asideSubMenu__spliter{
+      width: 390px;
+      height: 1px;
+      background: $lightgray;
+      margin: 0 auto;
+    }
+    .asideSubMenu__content{
+      padding: 8px 0 3px;
+      a{
+        line-height: 26px;
+        color: #898989;
+        &:hover{
+          color: $secondColor;
+        }
+      }
+      span{
+        color: $lightgray;
+      }
+    }
+  }
+
+}
+        
+  
