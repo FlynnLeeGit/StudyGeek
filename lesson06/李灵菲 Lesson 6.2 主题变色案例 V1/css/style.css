@@ -1,0 +1,311 @@
+/*全局样式*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: "微软雅黑";
+}
+body {
+	background: #FAFAFA;
+}
+/*百度区样式*/
+
+.bd-wrap {
+	width: 1180px;
+	text-align: center;
+	margin: 20px auto;
+}
+.bd-wrap .search-area img {
+	margin-right: 15px;
+	vertical-align: middle;
+}
+.bd-wrap #searchBox {
+	width: 538px;
+	height: 38px;
+	outline: none;
+	border: 1px solid #8a8a8a;
+	padding-left: 10px;
+	font-size: 16px;
+	box-shadow: 0 0 3px #616161 inset;
+}
+.bd-wrap #searchBtn {
+	height: 40px;
+	border: 1px solid #8a8a8a;
+	margin-left: -6px;
+	width: 120px;
+	font-size: 16px;
+	font-weight: bold;
+	background: #F3F3F3;
+}
+.bd-wrap .recent-words {
+	position: relative;
+	left: 15px;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.bd-wrap .recent-words a {
+	margin-right: 21px;
+	text-decoration: none;
+	color: #333;
+}
+.bd-wrap .recent-words a:hover {
+	text-decoration: underline;
+}
+/*主题选择区样式*/
+
+.theme-picker {
+	width: 1180px;
+	margin: 10px auto;
+	text-align: right;
+}
+.theme-picker .active {
+	border: 2px dotted;
+	border-radius: 5px;
+}
+.theme-picker a {
+	padding: 2px 5px;
+	margin-right: 2px;
+	text-decoration: none;
+}
+.theme-picker a:nth-of-type(1) {
+	color: #0AA770;
+}
+.theme-picker a:nth-of-type(2) {
+	color: #1A237E;
+}
+.theme-picker a:nth-of-type(3) {
+	color: #FF6F00;
+}
+.theme-picker a:nth-of-type(4) {
+	color: #673AB7;
+}
+.theme-picker a:nth-of-type(5) {
+	color: #E91E63;
+}
+/*导航菜单栏样式*/
+
+nav .navs-menu {
+	margin: 0 auto;
+	list-style-type: none;
+	width: 1180px;
+	border-bottom: 1px solid #EAEAEA;
+	background: #fff;
+	border-top: 2px solid;
+}
+nav .navs-menu li {
+	margin-right: -5px;
+	text-align: center;
+	padding-top: 10px;
+	height: 30px;
+	display: inline-block;
+}
+nav .navs-menu li:first-of-type {
+	width: 80px;
+}
+nav .navs-menu li:nth-of-type(n+2) {
+	width: 110px;
+}
+nav .navs-menu a {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	border-right: 1px solid #EAEAEA;
+	background: transparent;
+	color: #333;
+	text-decoration: none;
+}
+nav .navs-menu .active a {
+	border-right: none;
+	color: white;
+}
+/*文章主体样式开始----------------*/
+
+article {
+	width: 1180px;
+	margin: 10px auto;
+	display: flex;
+}
+article a {
+	font-size: 14px;
+	color: #333333;
+	text-decoration: none;
+}
+article a:hover {
+	color: #FF5500;
+	text-decoration: underline;
+}
+
+article .alink {
+	color: #FF5500;
+}
+
+/*侧边栏样式开始---------*/
+.aside {
+	flex: 1;
+}
+
+/*侧边栏图片轮播区样式*/
+.aside .pic-wrap {
+	height: 140px;
+	border: 1px solid #CECECE;
+	background: #fff;
+}
+.aside .pic-wrap p {
+	padding: 3px;
+	text-align: center;
+}
+
+/*侧边栏列表区样式*/
+.aside .side-list {
+	padding: 12px 12px 12px 15px;
+	margin-top: 12px;
+	height: 216px;
+	border: 1px solid #CECECE;
+	background: #fff;
+}
+.aside .side-list .row {
+	margin: 7px 0;
+}
+.col1,
+.col2 {
+	display: inline-block;
+	width: 128px;
+}
+.aside .tip {
+	padding-left: 20px;
+	margin: 3px;
+	height: 24px;
+	background: #f7f7f5;
+	border: 1px solid #d9d9d9;
+}
+.aside .tip a {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/*侧边栏话题导航区样式*/
+.aside .topic-wrap {
+	height: 35px;
+	border: 1px solid #CECECE;
+	border-top: none;
+	line-height: 35px;
+	text-align: center;
+}
+.aside .topic-wrap a {
+	padding: 8px 13px;
+	color: #616161;
+}
+.aside .topic-wrap .active {
+	border-top: 1px solid;
+}
+.aside .topic-wrap a:hover {
+	color: #118850;
+}
+/*----------侧边栏样式结束*/
+
+
+/*站点主体内容样式开始----------*/
+.site-body {
+	flex: 3;
+	margin-left: 10px;
+}
+
+/*知名站点样式*/
+.site-body .famous-site {
+	background: #fff;
+	border: 1px solid;
+}
+
+.famous-site .site-hd0 {
+	padding: 11px 0 11px 25px;
+}
+.famous-site .hd0-table td {
+	padding: 3px 0 3px 9px;
+	width: 150px;
+}
+.famous-site .hd0-table .more {
+	color: #97C853;
+	border: 1px dotted #BBBBBB;
+	padding: 3px 5px;
+	float: right;
+	margin-right: 20px;
+}
+.famous-site .hd0-table .more:hover {
+	border: 1px solid #97C853;
+	cursor: pointer;
+}
+.famous-site .spliter {
+	width: 820px;
+	height: 1px;
+	background: #BBBBBB;
+	margin: 0 auto;
+}
+.famous-site .site-hd1 {
+	padding: 11px 0 11px 25px;
+}
+.famous-site .hd1-table td {
+	padding: 0 0 4px 9px;
+	width: 150px;
+}
+
+
+/*中部小栏位样式*/
+.site-body .widget-bar {
+	height: 32px;
+}
+.widget-bar {
+	text-align: center;
+}
+.widget-bar a {
+	font-size: 12px;
+	color: #3b5998;
+	margin: 18px;
+	height: 34px;
+	line-height: 34px;
+}
+.widget-bar a:hover {
+	color: #3b5998;
+}
+
+/*猜你喜欢样式*/
+.site-body .guess-like {
+	height: 115px;
+	border: 1px solid #CECECE;
+}
+
+.guess-like {
+	padding: 9px 10px 9px 35px;
+	background: #fff;
+	position: relative;
+}
+.guess-like .like-label {
+	position: absolute;
+	font-size: 12px;
+	width: 14px;
+	left: 0;
+	top: 28px;
+	color: white;
+	opacity: 0.8;
+	line-height: 16px;
+	padding: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.guess-like .like-table td {
+	width: 120px;
+}
+.guess-like .like-table .title {
+	width: 60px;
+	padding: 6px 0;
+}
+.guess-like .like-table .change {
+	width: 50px;
+}
+.guess-like .like-table .change a {
+	font-size: 12px;
+}
+/*----------站点主体样式结束*/
+/*-------------------------文章主体样式结束*/
+

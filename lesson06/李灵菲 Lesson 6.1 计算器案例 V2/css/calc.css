@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	background:#7AAEDD;
+}
+
+/*表格容器*/
+.calculation {
+	text-align: center;
+	padding: 100px auto;
+}
+
+/*表格样式开始*/
+table {
+	border-collapse: collapse;
+	display: inline-block;
+	box-shadow: 0 20px 20px -20px #008080;
+}
+table caption {
+	font-size: 40px;
+	padding: 10px;
+	color: #FFFFFF;
+	text-shadow: 5px 5px 20px #008080;
+}
+td {
+	background: #2F4F4F;
+	text-align: center;
+	color: #FFFFFF;
+	width: 80px;
+	height: 60px;
+	font-size: 24px;
+	border: 1px solid #D3D3D3;
+	cursor: default;
+}
+td:hover {
+	box-shadow: 0 0 20px #D3D3D3;
+}
+td:active {
+	background: #808080;
+}
+.bg-teal {
+	background: #008080;
+}
+.bg-blue{
+	background: #1E90FF;
+}
+.bg-salmon{
+	background: #FA8072;
+}
+.bg-yellow{
+	background: #B8860B;
+}
+
+/*表格样式结束*/
+
+/*运算结果显示样式*/
+#calcValue {
+	height: 45px;
+	outline: 0;
+	border: 0;
+	box-sizing: border-box;
+	background: #2F4F4F;
+	padding: 5px 10px;
+	color: white;
+	font-size: 32px;
+	text-align: right;
+}
+/*运算结果显示样式借宿*/

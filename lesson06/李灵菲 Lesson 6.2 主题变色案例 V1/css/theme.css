@@ -1,0 +1,91 @@
+/*default 默认 主题样式*/
+a[class*=default],a[class*=default]:hover {      
+	color: #0AA770;
+}
+
+.navs-menu[class*=default]{
+	border-top-color: #0AA770;
+}
+.navs-menu[class*=default] .active{
+	background: #0AA770 ;
+}
+.famous-site[class*=default]{
+	border-color:#0AA770;
+}
+.like-label[class*=default]{
+	background: #0AA770;
+}
+/*------------------*/
+
+/*indigo 靛蓝 主题样式*/
+a[class*=indigo],a[class*=indigo]:hover{
+	color: #1a237e;
+}
+.navs-menu[class*=indigo]{
+	border-top-color: #1a237e;
+}
+.navs-menu[class*=indigo] .active{
+	background: #1a237e ;
+}
+.famous-site[class*=indigo]{
+	border-color:#1a237e;
+}
+.like-label[class*=indigo]{
+	background: #1a237e;
+}
+/*------------------*/
+
+/*amber 琥珀 主题样式*/
+a[class*=amber],a[class*=amber]:hover{
+	color: #ff6f00;
+}
+.navs-menu[class*=amber]{
+	border-top-color: #ff6f00;
+}
+.navs-menu[class*=amber] .active{
+	background: #ff6f00;
+}
+.famous-site[class*=amber]{
+	border-color:#ff6f00;
+}
+
+.like-label[class*=amber]{
+	background: #ff6f00;
+}
+/*------------------*/
+
+/*purple 贵紫 主题样式*/
+a[class*=purple],a[class*=purple]:hover{
+	color: #673ab7;
+}
+.navs-menu[class*=purple]{
+	border-top-color: #673ab7;
+}
+.navs-menu[class*=purple] .active{
+	background: #673ab7;
+}
+.famous-site[class*=purple]{
+	border-color:#673ab7;
+}
+.like-label[class*=purple]{
+	background: #673ab7;
+}
+/*------------------*/
+
+/*pink 可爱粉 主题样式*/
+a[class*=pink],a[class*=pink]:hover{
+	color: #e91e63;
+}
+.navs-menu[class*=pink]{
+	border-top-color: #e91e63;
+}
+.navs-menu[class*=pink] .active{
+	background: #e91e63;
+}
+.famous-site[class*=pink]{
+	border-color:#e91e63;
+}
+.like-label[class*=pink]{
+	background: #e91e63;
+}
+/*------------------*/

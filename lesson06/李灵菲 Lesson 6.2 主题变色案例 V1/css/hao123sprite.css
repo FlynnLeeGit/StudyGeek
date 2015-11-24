@@ -1,0 +1,33 @@
+/*雪碧图图标样式*/
+.hico{ background:url("../img/hao123.png") top left no-repeat;display: inline-block;vertical-align: middle;}
+.tianmao{ width:18px; height:18px; background-position:-10px -10px; }
+.star{ width:18px; height:18px; background-position:-10px -38px; }
+.smile{ width:18px; height:18px; background-position:-10px -66px; }
+.sun{ width:18px; height:18px; background-position:-10px -94px; }
+.home{ width:16px; height:17px; background-position:-10px -122px; }
+.glass{ width:18px; height:17px; background-position:-10px -149px; }
+.qunaer{ width:18px; height:16px; background-position:-10px -176px; }
+.aiqiyi{ width:18px; height:16px; background-position:-10px -202px; }
+.sisanjiujiu{ width:16px; height:16px; background-position:-10px -228px; }
+.wangyi{ width:16px; height:16px; background-position:-10px -254px; }
+.hao{ width:18px; height:16px; background-position:-10px -280px; }
+.tengxun{ width:18px; height:16px; background-position:-10px -306px; }
+.tejia{ width:18px; height:16px; background-position:-10px -332px; }
+.taobao{ width:18px; height:16px; background-position:-10px -358px; }
+.sohu{ width:18px; height:16px; background-position:-10px -384px; }
+.juhuasuan{ width:18px; height:16px; background-position:-10px -410px; }
+.fenghuang{ width:18px; height:16px; background-position:-10px -436px; }
+.xinlang{ width:18px; height:16px; background-position:-10px -462px; }
+.jingdong{ width:18px; height:16px; background-position:-10px -488px; }
+.baidu{ width:18px; height:16px; background-position:-10px -514px; }
+.bear{ width:18px; height:16px; background-position:-10px -540px; }
+.game{ width:18px; height:16px; background-position:-10px -566px; }
+.life{ width:16px; height:16px; background-position:-10px -592px; }
+.price{ width:16px; height:16px; background-position:-10px -618px; }
+.freegame{ width:18px; height:15px; background-position:-10px -644px; }
+.shipin{ width:16px; height:15px; background-position:-10px -669px; }
+.xinhua{ width:18px; height:14px; background-position:-10px -694px; }
+.xinwen{ width:16px; height:14px; background-position:-10px -718px; }
+.dianying{ width:16px; height:14px; background-position:-10px -742px; }
+.caipiao{ width:16px; height:11px; background-position:-10px -766px; }
+
