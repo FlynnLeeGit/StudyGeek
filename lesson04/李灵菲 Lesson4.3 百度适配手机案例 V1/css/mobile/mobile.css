@@ -1,0 +1,211 @@
+/*移动端全局样式*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 16px;
+}
+body {
+	font-family: arial;
+}
+.inline-block {
+	display: inline-block;
+}
+
+/*头部导航栏样式-----*/
+nav{
+	height: 54px;
+	color: #818388;
+	padding: 7px;
+	box-sizing: border-box;
+}
+nav .w-temp {
+	font-size: 2rem;
+}
+nav .icon {
+	font-size: 1.5rem;
+	margin-left: -0.5rem;
+}
+nav .spliter {
+	width: 1px;
+	height: 1.8rem;
+	vertical-align: text-bottom;
+}
+nav .w-city {
+	vertical-align: top;
+	font-size: 0.8rem;
+}
+nav .w-air {
+	position: relative;
+	left: -2rem;
+	font-size: 0.8rem;
+}
+nav .w-air .icon-arrowdown {
+	vertical-align: top;
+	font-size: 1rem;
+	margin-left: 0.5rem;
+}
+nav .login {
+	color: #B7BABE;
+	float: right;
+	font-size: 1rem;
+}
+/*-----------头部导航栏样式结束*/
+
+/*文章主体样式开始------*/
+/*logo 搜索框等样式*/
+article .bd-logo {
+	text-align: center;
+	padding: 17px 0 15px;
+}
+article .search-area {
+	display: -webkit-flex;
+	border: 1px solid #8d9394;
+	border-radius: 1px;
+	margin: 0 10px;
+}
+article .search-box {
+	flex: 1;
+	font-size: 1.125rem;
+	border: 0;
+	padding: 7px 42px 7px 6px;
+}
+article .search-box:focus {
+	outline-color: #A6C8FF;
+}
+article .search-btn {
+	color: #46484b;
+	width: 79px;
+	height: 42px;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 42px;
+	border: 0;
+	outline: 0;
+	border-left: 1px solid #8d9394;
+	text-shadow: 0 1px 0 #fafafa;
+	box-shadow: 0 0 0 1px #fff inset;
+	background: -webkit-linear-gradient(top, #f9f9f9, #e7e9eb);
+}
+
+
+/*快捷导航条区样式*/
+article .navs {
+	margin: 17px 10px 35px 10px;
+}
+article .navs .row {
+	margin-bottom: 10px;
+}
+article .navs .row1 {
+	display: flex;
+}
+article .navs .row a {
+	flex: 1;
+	text-align: center;
+	color: #262626;
+	font-size: 0.8125rem;
+	text-decoration: none;
+	
+}
+article .navs .row .icon {
+	font-size: 1.5rem;
+	color: #777;
+}
+
+
+/*功能区通用样式*/
+article .box-wraper {
+	margin: 15px 10px 0 10px;
+	border: 1px solid #D9DDE2;
+}
+article .box-title-area {
+	padding: 0 15px 0px 15px;
+	height: 40px;
+	line-height: 40px;
+}
+article .box-title-area span {
+	font-size: 0.9rem;
+	color: #AAAAAA;
+}
+article .box-title-area .icon-gengduo {
+	float: right;
+	font-size: 1.5rem;
+	color: #B6B7BA;
+}
+
+
+/*常用网址区样式*/
+article .box-title-area .icon-tuiguang {
+	color: #6FB5E9;
+}
+article .site-content {
+	display: flex;
+	text-decoration: none;
+	text-align: center;
+}
+article .site-content a {
+	flex: 1;
+	height: 42px;
+	line-height: 42px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #262626;
+	font-size: 0.9rem;
+}
+
+article .site-content .icon-plus {
+	font-size: 1.5rem;
+	color: #B6B7BA;
+}
+
+/*交通路况区样式*/
+article .box-title-area .icon-jiaotong {
+	color: #008000;
+}
+
+article .jiaotong-content {
+	text-align: center;
+	font-size: 0.9rem;
+	padding: 0.3rem 1rem 2rem 1rem;
+}
+article .jiaotong-content a {
+	text-decoration: none;
+	color: #0058d2;
+}
+article .jiaotong-content p:first-of-type {
+	margin-bottom: 10px;
+}
+/*----------------文章主体结束*/
+
+/*脚部样式开始----*/
+footer {
+	padding: 0 10px;
+}
+
+footer .switch-mode {
+	text-align: center;
+	display: flex;
+}
+footer .switch-mode a {
+	flex: 1;
+	padding: 1rem 1rem;
+}
+footer .switch-mode button {
+	font-size: 0.8rem;
+	height: 26px;
+	width: 100%;
+	color: #555;
+	border: 1px solid #ececec;
+	background: transparent;
+}
+footer .about {
+	text-align: center;
+	padding: 0 0 17px 0;
+}
+footer .about a {
+	text-decoration: none;
+	font-size: 0.8rem;
+	color: #aaa;
+}
+/*脚部样式结束*/

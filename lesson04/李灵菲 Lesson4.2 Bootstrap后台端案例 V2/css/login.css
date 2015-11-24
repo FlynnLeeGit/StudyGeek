@@ -1,0 +1,115 @@
+body {
+	font-family: Arial, sans-serif;
+	background: #1D2024;
+}
+
+/*自适应登录框-----*/
+@media only screen and (min-width: 480px) {
+	.login-box {
+		width: 365px;
+		border: 5px solid #394557;
+	}
+}
+
+
+/*form表单开始-----------*/
+.login-box {
+	background: #F7F7F7;
+	height: 390px;
+	min-width: 345px;
+	margin: 0 auto;
+}
+
+.login-body {
+	padding: 30px 35px 15px 35px;
+	box-shadow: 0 6px 6px -6px #737373;
+	position: relative;
+}
+
+.input-bar {
+	width: 100%;
+}
+.input-bar input {
+	border-radius: 0;
+	margin: 10px 0;
+}
+.input-bar input:hover {
+	border-color: #B5B5B5;
+}
+.input-bar input:focus {
+	border-color: #F59942;
+	box-shadow: none;
+}
+.input-bar input:focus+i {
+	color: #478fca;
+}
+.input-bar i {
+	position: relative;
+	top: -25px;
+	left: -8px;
+	color: #909090;
+	z-index: 2;
+}
+
+.login-box h4 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #D5E3EF;
+}
+
+#submit-btn {
+	border-radius: 0;
+	width: 100px;
+	border: 5px solid #337AB7;
+}
+/*-------------form表单结束*/
+
+/*社交帐号登录开始---------*/
+.login-using {
+	padding-top: 15px;
+	position: relative;
+}
+.login-using:before {
+	content: "";
+	position: absolute;
+	left: 2%;
+	width: 30%;
+	height: 1rem;
+	border-bottom: 1px dotted #a6c4db;
+}
+.login-using:after {
+	content: "";
+	position: absolute;
+	width: 30%;
+	left: 68%;
+	height: 1rem;
+	border-bottom: 1px dotted #a6c4db;
+}
+.social-login button {
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	border: 0;
+}
+/*---------------社交登录结束*/
+/*脚部开始-------------------*/
+.foot {
+	/*margin-top: 15px;*/
+	height: 45px;
+	background: #5090C1;
+	padding: 8px;
+}
+.forgot {
+	color: #fe9;
+}
+.forgot:hover {
+	text-decoration: underline;
+	color: #fe9;
+}
+.register {
+	color: #cf7;
+}
+.register:hover {
+	text-decoration: underline;
+	color: #cf7;
+}
+/*---------登录脚部结束*/

@@ -1,0 +1,404 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: "microsoft yahei";
+	-webkit-font-smoothing: antialiased;
+}
+.header {
+	background: url(../img/bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+/*顶栏样式开始--------------*/
+
+.topbar {
+	background: #F5595B;
+	width: 100%;
+	height: 50px;
+}
+.topbar-body {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+	text-align: center;
+}
+.topbar-body div {
+	display: inline-block;
+}
+.register {
+	float: left;
+	font-size: 14px;
+}
+.register span {
+	color: white;
+	margin: 0 17px;
+}
+.register a {
+	color: white;
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
+}
+.topbar-logo {
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	position: relative;
+}
+.topbar-logo:before {
+	content: "";
+	position: absolute;
+	width: 34px;
+	height: 41px;
+	background: url(../img/icoBig.png) no-repeat;
+	background-position: -10px -478px;
+	left: -34px;
+}
+.topbar-logo:hover {
+	cursor: pointer;
+}
+.search-cart {
+	float: right;
+	height: 50px;
+	line-height: 50px;
+}
+.search-cart #search {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	background: white;
+	margin-right: 35px;
+}
+.search-cart #search:hover {
+	background: #f65a5b;
+}
+.search-cart #search span {
+	display: inline-block;
+	width: 24px;
+	height: 22px;
+	background: url(../img/icoBig.png) no-repeat;
+	background-position: -88px -478px;
+	vertical-align: text-bottom;
+}
+.search-cart #add-to-cart {
+	text-decoration: none;
+	margin-right: 4px;
+	color: white;
+	position: relative;
+}
+.search-cart #add-to-cart:after {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 20px;
+	left: -28px;
+	top: 2px;
+	background: url(../img/icoBig.png) no-repeat;
+	background-position: -54px -478px;
+}
+/*------------顶栏样式结束*/
+
+/*头部主体区开始---------------*/
+.h-main {
+	text-align: center;
+	margin: 0 auto;
+	width: 1140px;
+}
+/*导航栏与正中logo部分开始--------------*/
+.navbar {
+	background: rgba(255, 255, 255, 0.4);
+	height: 60px;
+}
+.navbar span {
+	display: inline-block;
+	width: 1px;
+	height: 60px;
+	background: white;
+	vertical-align: bottom;
+}
+.navbar a {
+	margin: 0 -5px;
+	width: 190px;
+	height: 60px;
+	line-height:60px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 22px;
+	color: #1B1C1D;
+	
+}
+.navbar a:hover {
+	background: #204056;
+	-webkit-transition: all 0.3s ease-in;
+	font-weight: bold;
+	color: white;
+}
+.favour {
+	margin-top: 70px;
+	height: 372px;
+}
+#brand-logo {
+	margin: 0 auto;
+	width: 128px;
+	height: 128px;
+	background: url(../img/icoBig.png) no-repeat;
+	background-position: -10px -10px;
+	border-radius: 50%;
+}
+#brand-logo:hover {
+	box-shadow: 0 0 20px #f65a5b;
+	cursor: pointer;
+}
+#brand-logo-title {
+	color: #f65a5b;
+	font-size: 48px;
+}
+#brand-content {
+	color: white;
+	margin-top: 20px;
+	font-size: 48px;
+}
+#brand-btn {
+	margin-top: 30px;
+	width: 185px;
+	height: 45px;
+	font-size: 20px;
+	font-family: "microsoft yahei";
+	color: white;
+	background: #CA4B4D;
+	border: none;
+	outline: none;
+}
+#brand-btn:hover {
+	background: #f65a5b;
+	cursor: pointer;
+}
+/*-----------导航栏与正中logo部分结束*/
+
+/*head区menu部分开始-----------*/
+.menu {
+	width: 1140px;
+	height: 300px;
+	margin: 120px atuo 30px auto;
+}
+.menu-panel {
+	width: 350px;
+	float: left;
+	margin: 13px;
+}
+.menu-header {
+	height: 180px;
+	background: rgba(255, 255, 255, 0.3);
+	position: relative;
+}
+.menu-logo {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	left: 125px;
+	top: 40px;
+}
+.menu-logo:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px 5px #CA4B4D;
+}
+#logo1 {
+	background: url(../img/icoBig.png) no-repeat;
+	background-position: -10px -148px;
+}
+#logo2 {
+	background: url(../img/icoBig.png) no-repeat;
+	background-position: -10px -258px;
+}
+#logo3 {
+	background: url(../img/icoBig.png) no-repeat;
+	background-position: -10px -368px;
+}
+.menu-logo-title {
+	margin-top: 45px;
+	font-size: 20px;
+	font-weight: bold;
+	z-index: 2;
+}
+.menu-content {
+	color: white;
+	padding: 10px 18px;
+}
+/*----------head区menu部分结束*/
+/*---------------head主体内容结束*/
+
+/*body区域开始-----------*/
+.body-article1 {
+	width: 1140px;
+	margin: 60px auto;
+}
+.article1-header {
+	text-align: center;
+	width: 860px;
+	margin: 0 auto;
+}
+.article1-title {
+	margin: 0 auto;
+	width: 195px;
+	font-size: 24px;
+	color: #f65a5b;
+	padding-bottom: 26px;
+	border-bottom: 3px solid black;
+}
+.article1-content {
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 26px;
+}
+.article1-menu {
+	margin: 50px auto;
+	height: 580px;
+	width: 1120px;
+}
+.article1-menu-panel {
+	width: 350px;
+	height: 270px;
+	float: left;
+	position: relative;
+}
+.article1-menu-panel span {
+	position: absolute;
+	font-size: 24px;
+	bottom: 35px;
+	left: 28px;
+	color: white;
+}
+.m1 {
+	background: url(../img/article1-1.jpg) no-repeat;
+	background-size: cover;
+}
+.m2 {
+	margin: 0 35px;
+}
+.m3{
+	background: url(../img/article1-2.jpg) no-repeat;
+	background-size: cover;
+}
+.m4{
+	margin-top: 35px;
+}
+.m5 {
+	margin: 35px 35px 0 35px;
+	background: url(../img/article1-3.jpg) no-repeat;
+	background-size: cover;
+}
+.m6{
+	margin-top: 35px;
+}
+.m2,.m4,.m6 {
+	color: white;
+	background: #204056;
+}
+.a1-menu-title {
+	font-size: 24px;
+	text-align: center;
+	padding: 26px;
+}
+.a1-menu-content {
+	padding: 0 26px;
+	line-height: 2;
+	text-indent: 3em;
+}
+.a1-menu-price {
+	text-align: right;
+	padding-right: 26px;
+	font-size: 27px;
+}
+.a1-menu-price del {
+	font-size: 12px;
+}
+/*-------------文章主体结束*/
+
+/*脚部样式开始----------------*/
+.foot-about-wrap {
+	height: 330px;
+	background: #6a737b;
+}
+.foot-about {
+	width: 1140px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.about-ul {
+	width: 20%;
+	vertical-align: top;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 -3px;
+}
+.about-ul span {
+	font-size: 18px;
+	color: #F65A5B;
+}
+.about-ul li {
+	margin-bottom: 18px;
+}
+.about-ul a {
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+.foot-share-wrap {
+	height: 60px;
+	background: #F65A5B;
+}
+.foot-share {
+	width: 1140px;
+	margin: 0 auto;
+	color: white;
+	position: relative;
+}
+.foot-share p {
+	text-align: center;
+	width: 600px;
+	height: 60px;
+	line-height: 60px;
+	position: absolute;
+	left: 50%;
+	margin-left: -300px;
+	font-size: 14px;
+}
+.icon {
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+.foot-share i {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+}
+.foot-share #share1 {
+	background: url(../img/icoShare.png) no-repeat;
+	background-position: -10px -240px;
+}
+.foot-share #share2 {
+	background: url(../img/icoShare.png) no-repeat;
+	background-position: -10px -194px;
+}
+.foot-share #share3 {
+	background: url(../img/icoShare.png) no-repeat;
+	background-position: -10px -148px;
+}
+.foot-share #share4 {
+	background: url(../img/icoShare.png) no-repeat;
+	background-position: -10px -102px;
+}
+.foot-share #share5 {
+	background: url(../img/icoShare.png) no-repeat;
+	background-position: -10px -56px;
+}
+.foot-share #share6 {
+	background: url(../img/icoShare.png) no-repeat;
+	background-position: -10px -10px;
+}
+/*-------------脚部样式结束*/

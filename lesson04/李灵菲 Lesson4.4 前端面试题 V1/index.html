@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Lesson4.4 面试题汇总</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<!--头部开始-->
+		<header>
+			<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<div class="navbar-brand">HTML+CSS面试题汇总</div>
+				</div>
+			</nav>
+		</header>
+        <!--头部结束-->
+
+
+		<!--内容主容器开始-->
+		<div class="container">
+			
+			<!--列表项-->
+			<h1>面试17问目录</h1>
+			<ul class="list-group col-xs-12 col-sm-6">
+				<li class="list-group-item"><a onclick="changeColor(0)" href="#a1">1.Doctype作用？标准模式与兼容模式各有什么区别?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(1)" href="#a2">2.HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(2)" href="#a3">3.行内元素有哪些?块级元素有哪些?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(3)" href="#a4">4.CSS引入的方式有哪些? link和@import的区别是?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(4)" href="#a5">5.浏览器的内核分别是什么?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(5)" href="#a6">6.常见的CSS Hack</a></li>
+				<li class="list-group-item"><a onclick="changeColor(6)" href="#a7">7.html5有哪些新特性?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(7)" href="#a8">8.语义化的理解?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(8)" href="#a9">9.介绍一下CSS的盒子模型?</a></li>
+			</ul>
+			<ul class="list-group col-xs-12 col-sm-6">
+				<li class="list-group-item"><a onclick="changeColor(9)" href="#a10">10.CSS 选择符有哪些?哪些属性可以继承?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(10)" href="#a11">11.CSS 权重如何计算?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(11)" href="#a12">12.CSS3中的新增伪类有哪些?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(12)" href="#a13">13.如何居中div块级?如何居中一个浮动元素?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(13)" href="#a14">14.relative和absolute定位区别?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(14)" href="#a15">15.用过媒体查询，针对移动端的布局吗?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(15)" href="#a16">16.目前关注哪些最新的Web前端技术(未来的发展方向)?</a></li>
+				<li class="list-group-item"><a onclick="changeColor(16)" href="#a17">17.最近在学什么?能谈谈你未来3,5年给自己的规划吗?</a></li>
+			</ul>
+			<div class="row"></div>
+			
+			<!--主内容区块第一列-->
+			<div class="col-md-6 col-xs-12">
+				<div id="a1">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>Doctype作用?标准模式与兼容模式各有什么区别?</h5>
+						</div>
+						<div class="panel-body">
+							<p>
+								1、&lt;!DOCTYPE&gt;声明位于位于HTML文档中的第一行，处于 &lt;html&gt; 标签之前。 告知浏览器的解析器用什么文档标准解析这个文档。 DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。
+							</p>
+							<p>
+								2、标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。 在兼容模式中，页面以宽松的向后兼容的方式显示, 模拟老式浏览器的行为以防止站点无法工作。
+							</p>
+
+						</div>
+					</div>
+				</div>
+				
+				<div id="a2">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;?</h5>
+						</div>
+						<div class="panel-body">
+							<p>HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为(让浏览器按照它们应该的方式来运行);</p>
+							<p>而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a3">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>行内元素有哪些?块级元素有哪些?</h5>
+						</div>
+						<div class="panel-body">
+							<p>
+								首先：CSS规范规定,每个元素都有display属性,确定该元素的类型, 每个元素都有默认的display值,如div的display默认值为“block”, 则为“块级”元素;span默认display属性值为“inline”,是“行内”元素.
+							</p>
+							<p>1、行内元素有：a b span img input select strong</p>
+							<p>2、块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="a4">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>CSS引入的方式有哪些? link和@import的区别是?</h5>
+						</div>
+						<div class="panel-body">
+							<p>有link与@import</p>
+							<p>(1)link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;</p>
+							<p>(2)页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;</p>
+							<p>(3)import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;</p>
+						</div>
+					</div>
+				</div>
+				<div id="a5">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>浏览器的内核分别是什么?</h5>
+						</div>
+						<div class="panel-body">
+							<p>IE浏览器的内核Trident、Mozilla的Gecko、Chrome的Blink(WebKit的分支)、Opera内核原为Presto，现为Blink；</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a6">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>常见的CSS Hack</h5>
+						</div>
+						<div class="panel-body">
+							<p>ie浮动与块级元素外边距3px问题 ie下的图片会有框线 中文界面下默认会将小于 12px 的文本强制按照 12px 显示</p>
+							<p>巧妙的使用“\9”这一标记，将IE游览器从所有情况中分离出来。</p>
+							<pre><code>.bb{<br />background-color:#f1ee18;/*所有识别*/<br />.background-color:#00deff\9; /*IE6、7、8识别*/<br />+background-color:#a200ff;/*IE6、7识别*/<br />_background-color:#1e0bd1;/*IE6识别*/ <br /> }</code></pre>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a7">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>html5有哪些新特性?</h5>
+						</div>
+						<div class="panel-body">
+							<p>主要是关于图像，位置，存储，多任务等功能的增加</p>
+							<p>绘画 canvas,用于媒介回放的 video 和 audio 元素</p>
+							<p>本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失;essionStorage 的数据在浏览器关闭后自动删除</p>
+							<p>语意化更好的内容元素，比如 article、footer、header、nav、section</p>
+							<p>表单控件，calendar、date、time、email、url、search,新的技术webworker,websockt, Geolocation</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a8">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>语义化的理解?</h5>
+						</div>
+						<div class="panel-body">
+							<p>
+								html语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析； 在没有样式CCS情况下也以一种文档格式显示，并且是容易阅读的。 搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于 SEO。 使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a9">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>介绍一下CSS的盒子模型?</h5>
+						</div>
+						<div class="panel-body">
+							<p>标准盒子模型与怪异盒子模型,标准盒子先计算内容,怪异盒子模型先计算边界</p>
+							<p>包括内容(content) 边框(border) 外边距(margin) 内边距(padding)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--主内容区块第一列结束-->
+			
+			<!--主内容区块第二列开始-->
+			<div class="col-md-6 col-xs-12">
+				<div id="a10">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>CSS 选择符有哪些?哪些属性可以继承?</h5>
+						</div>
+						<div class="panel-body">
+							<p>1.id选择器(#myid)</p>
+							<p>2.类选择器(.myclassname)</p>
+							<p>3.标签选择器(div, h1, p)</p>
+							<p>4.相邻选择器(h1 + p)</p>
+							<p>5.子选择器(ul &gt; li)</p>
+							<p>6.后代选择器(li a)</p>
+							<p>7.通配符选择器( * )</p>
+							<p>8.属性选择器(a[rel = "external"])</p>
+							<p>9.伪类选择器(a: hover, li: nth - child)等</p>
+							<p>可继承的样式： font-size font-family color, UL LI DL DD DT;</p>
+							<p>不可继承的样式：border padding margin width height;</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a11">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>CSS 权重如何计算?</h5>
+						</div>
+						<div class="panel-body">
+							<p>以下是权重的规则：标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值：</p>
+							<p>/*权重为1*/ div{ }</p>
+							<p>/*权重为10*/ .class1{ }</p>
+							<p>/*权重为100*/ #id1{ }</p>
+							<p>/*权重为100+1=101*/ #id1 div{ }</p>
+							<p>/*权重为10+1=11*/ .class1 div{ }</p>
+							<p>/*权重为10+10+1=21*/ .class1 .class2 div{ }</p>
+							<p>如果权重相同，则最后定义的样式会起作用，但是应该避免这种情况出现</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a12">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>CSS3中的新增伪类有哪些?</h5>
+						</div>
+						<div class="panel-body">
+							<p>p:first-of-type 选择属于其父元素的首个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</p>
+							<p>p:last-of-type 选择属于其父元素的最后 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</p>
+							<p>p:only-of-type 选择属于其父元素唯一的 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</p>
+							<p>p:only-child 选择属于其父元素的唯一子元素的每个 &lt;p&gt; 元素。</p>
+							<p>p:nth-child(n) 选择属于其父元素的第n个子元素的每个 &lt;p&gt; 元素。</p>
+							<p> :enabled :disabled 控制表单控件的禁用状态。</p>
+							<p> :checked 单选框或复选框被选中。</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a13">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>如何居中div块级?如何居中一个浮动元素?</h5>
+						</div>
+						<div class="panel-body">
+							<p>给div设置一个宽度，然后添加margin:0 auto属性</p>
+							<pre><code>div{<br />width:200px;<br />margin:0 auto;<br />}</code></pre>
+							<p>居中一个浮动元素</p>
+							<pre><code>.div {<br />width:500px ; height:300px;//高度可以不设<br />margin: -150px 0 0 -250px;<br />position:relative;相对定位<br />background-color:pink;//方便看效果<br />left:50%;<br />top:50%;<br />}</code></pre>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a14">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>relative和absolute定位区别?</h5>
+						</div>
+						<div class="panel-body">
+							<p>absolute 生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。</p>
+							<p>relative 生成相对定位的元素，相对于其正常位置进行定位。</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a15">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>用过媒体查询，针对移动端的布局吗?</h5>
+						</div>
+						<div class="panel-body">
+							<p>做过,使用@media query 适配pc端与移动端,可以查看我的百度兼容移动端案例</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a16">
+					<div class="panel">
+						<div class="panel-heading">
+							<h5>目前关注哪些最新的Web前端技术(未来的发展方向)?</h5>
+						</div>
+						<div class="panel-body">
+							<p>Google的设计元素Material Design,Angular JS,React 组件开发等</p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="a17">
+					<div class="panel panel">
+						<div class="panel-heading">
+							<h5>最近在学什么?能谈谈你未来3,5年给自己的规划吗?</h5>
+						</div>
+						<div class="panel-body">
+							<p>JavaScript语言,深入了解它对于研究nodeJS和成为全栈工程师有很大的裨益，最近的3年希望能够通过自己所学的知识开发属于自己的产品，通过了解用户需求去解决生活中的实际问题</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!--主内容区块第二列结束-->
+		</div>
+		<!--主容器内容结束-->
+		
+		<!--固定按钮-->
+		<a id="fixed-btn" class="btn btn-lg btn-success" href="#">↑</a>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

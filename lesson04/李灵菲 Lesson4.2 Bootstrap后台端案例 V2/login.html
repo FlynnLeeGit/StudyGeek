@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>BootStrap Login</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<!--以上引入bootstrap前端库与fontawesome字体图标库-->
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+ 		<!--头部开始-->
+		<div class="header">
+			<div class="text-center">
+				<h2>
+					<i class="icon-leaf green"></i>
+					<span class="orange">Ace</span> 
+					<span class="white">Application</span>
+				</h2>
+				<h4 class="blue">© Company Name</h4>
+			</div>
+		</div>
+		<!--头部结束-->
+		<!--登录框开始-->
+		<div class="login-box">
+            
+			<div class="login-body">
+				<h4>
+					<i class="icon-coffee green"></i>
+					<span class="blue">Please Enter Your Information</span>
+				</h4>
+                <!--表单开始-->
+				<form action="index.html">
+					
+					<div class="input-group input-bar">
+						<input class="form-control" type="text" name="username" id="username" placeholder="Username" />
+						<i class="icon-user pull-right"></i>
+					</div>
+					
+					<div class="input-group input-bar">
+						<input class="form-control " type="password" name="password" id="password" placeholder="Password" />
+						<i class="icon-lock pull-right"></i>
+					</div>
+					
+					<div class="submit-area">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="remember" id="remember" />
+								<span>Remember Me</span>
+							</label>
+							<button id="submit-btn" type="submit" class="btn btn-sm btn-primary pull-right">
+								<i class="icon-key"></i>&nbsp;
+								<span>Login</span>
+							</button>
+						</div>
+					</div>
+					
+				</form>
+				<!--表单结束-->
+				<p class="login-using blue text-center">Or Login Using</p>
+				
+				<div class="social-login text-center">
+					<button class="btn btn-primary text-center"><i class="icon-facebook icon-2x"></i></button>
+					<button class="btn btn-info"><i class="icon-twitter icon-2x"></i></button>
+					<button class="btn btn-danger"><i class="icon-google-plus icon-2x"></i></button>
+				</div>
+			</div>
+			
+			
+            <!--脚部开始-->
+			<div class="foot">
+				<a href="#" class="forgot pull-left">
+					<i class="icon-arrow-left"></i>
+					<span>I forgot my password</span>
+				</a>
+				<a href="#" class="register pull-right">
+					<span>I want to register</span>
+					<i class="icon-arrow-right"></i>
+				</a>
+			</div>
+			<!--脚部结束-->
+		</div>
+		<!--登录框结束-->
+	</body>
+
+</html>

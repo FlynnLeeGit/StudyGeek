@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>百度一下</title>
+		<link rel="stylesheet" type="text/css" href="css/mobile/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/mobile/mobile.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<head>
+			<nav>
+				<div class="w-temp inline-block">21°</div>
+				<i class="icon icon-duoyun"></i>
+				<div class="spliter inline-block"></div>
+				<div class="w-city inline-block">上海</div>
+				<div class="w-air inline-block">空气 66<i class="icon icon-arrowdown"></i></div>
+				<a class="login" href="http://wappass.baidu.com/passport/?login"><i class="icon icon-login"></i></a>
+			</nav>
+		</head>
+		<!--头部结束-->
+
+		<!--文章主体开始-->
+		<article>
+			<!--logo与搜索区-->
+			<div class="bd-logo">
+				<img src="img/mobile-logo.png" width="175" height="55" alt="百度一下 你就知道" />
+			</div>
+			<form class="search-area" action="http://m.baidu.com/s">
+				<input class="search-box" type="text" name="word" autocomplete="off" autofocus="on" />
+				<button type="submit" class="search-btn">百度一下</button>
+			</form>
+
+			<!--快捷导航条区-->
+			<div class="navs">
+
+				<div class="row row1">
+					<a href="http://m.baidu.com/news?fr=mohome&ssid=0&from=844b&uid=&pu=sz%401320_2001%2Cta%40iphone_1_4.2_3_533&bd_page_type=1">
+						<i class="icon icon-xinwen"></i>
+						<p>新闻</p>
+					</a>
+					<a href="http://dushu.baidu.com/">
+						<i class="icon icon-xiaoshuo"></i>
+						<p>小说</p>
+					</a>
+					<a href="http://video.m.baidu.com/">
+						<i class="icon icon-shipin"></i>
+						<p>视频</p>
+					</a>
+					<a href="http://life.m.baidu.com/">
+						<i class="icon icon-shenghuo"></i>
+						<p>生活</p>
+					</a>
+					<a href="http://map.baidu.com/mobile/webapp/index/index">
+						<i class="icon icon-ditu"></i>
+						<p>地图</p>
+					</a>
+					<a onclick="showMore()" href="javascript:;">
+						<i class="icon icon-arrowdown"></i>
+						<p>更多</p>
+					</a>
+				</div>
+
+				<div class="row row2" style="display: none;">
+					<a href="http://tieba.baidu.com/?page=discovery">
+						<i class="icon icon-tieba"></i>
+						<p>贴吧</p>
+					</a>
+					<a href="http://image.baidu.com/">
+						<i class="icon icon-tupian"></i>
+						<p>图片</p>
+					</a>
+					<a href="http://webapp.cbs.baidu.com/unav/wise">
+						<i class="icon icon-wangzhi"></i>
+						<p>网址</p>
+					</a>
+					<a href="http://e.baidu.com/m2">
+						<i class="icon icon-tuiguang"></i>
+						<p>推广</p>
+					</a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
+			</div>
+			<!--快捷导航条区结束-->
+
+			<!--常用网址区-->
+			<div class="box-wraper">
+				<div class="box-title-area">
+					<span><i class="icon icon-tuiguang"></i>&nbsp;常用网址</span>
+					<i class="icon icon-gengduo"></i>
+				</div>
+				<div class="site-content">
+					<a href="http://tieba.baidu.com/">贴吧</a>
+					<a href="http://m.hao123.com/">hao123</a>
+					<a href="http://map.baidu.com/">地图</a>
+					<a href="http://vip.baidu.com/">百度VIP</a>
+				</div>
+				<div class="site-content">
+					<a href="http://image.baidu.com/">图片</a>
+					<a href="http://music.baidu.com/">音乐</a>
+					<a href="http://m.nuomi.com/">糯米</a>
+					<a href="http://www.baidu.com/#|iview=nav"><i class="icon icon-plus"></i></a>
+				</div>
+			</div>
+
+			<!--交通路况区-->
+			<div class="box-wraper">
+				<div class="box-title-area">
+					<span><i class="icon icon-jiaotong"></i>&nbsp;交通路况</span>
+					<i class="icon icon-gengduo"></i>
+				</div>
+				<div class="jiaotong-content">
+					<p><a href="javascript:;">设置家和公司地址</a></p>
+					<p>随时随地,了解实时路况</p>
+				</div>
+			</div>
+
+		</article>
+		<!--文章主体结束-->
+
+		<!--脚部开始-->
+		<footer>
+			<div class="switch-mode">
+				<a href="http://m.baidu.com/?from=844b&pu=sz%401321_480&wpo=btmfast">
+					<button>极速版</button>
+				</a>
+				<a href="http://ufosdk.baidu.com/">
+					<button>用户反馈</button>
+				</a>
+			</div>
+			<div class="about">
+				<a href="http://m.baidu.com/pub/">使用百度前必读 Baidu 京ICP证030173号</a>
+			</div>
+		</footer>
+		<!--脚部结束-->
+
+		<script src="js/mobile.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入自适应分辨率js-->
+	</body>
+
+</html>

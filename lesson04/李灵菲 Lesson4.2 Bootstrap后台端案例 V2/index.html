@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Admin 后台管理系统首页</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<!--引入bootstrap框架与字体框架-->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!--引入通用样式与本页样式-->
+	</head>
+
+	<body>
+
+		<!--头部导航栏开始-->
+		<header>
+			<nav class="topnav navbar navbar-default">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<i class="icon-leaf white"></i>
+						<span class="white">Ace 后台管理系统</span>
+					</a>
+					<button class="btn navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse">
+						<i class="icon-reorder white"></i>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="nav-collapse">
+					<div class="nav navbar-nav pull-right">
+						<li id="user-login" class="dropdown">
+							<a class="dropdown-toggle btn btn-info user-login" href="#" data-toggle="dropdown">
+								<img class="img-circle" src="img/user.jpg" />
+								<span class="white">Welcome,Json</span>
+								<i class="icon-caret-down white"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="icon-cog"></i>Setting</a></li>
+								<li><a href="#"><i class="icon-user"></i>Profile</a></li>
+								<li class="divider"></li>
+								<li><a href="login.html"><i class="icon-off"></i>LogOut</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a class="btn btn-primary" href="#">
+								<i class="icon-tasks white"></i>
+								<span class="badge">4</span>
+							</a>
+						</li>
+						<li>
+							<a class="btn btn-danger" href="#">
+								<i class="icon-bell-alt white"></i>
+								<span class="badge badge-important">8</span>
+							</a>
+						</li>
+						<li>
+							<a class="btn btn-success" href="#">
+								<i class="icon-envelope white"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+						</li>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!--头部导航栏结束-->
+
+		<!--主体部分开始-->
+		<article>
+
+			<!--侧边栏开始-->
+			<div class="aside col-md-3 col-lg-2 col-sm-4">
+				<div class="shorcuts text-center">
+					<a class="btn btn-success btn-sm"><i class="icon-signal"></i></a>
+					<a class="btn btn-info btn-sm"><i class="icon-pencil"></i></a>
+					<a class="btn btn-warning btn-sm"><i class="icon-group"></i></a>
+					<a class="btn btn-danger btn-sm"><i class="icon-cogs"></i></a>
+				</div>
+				<div class="aside-menu list-group">
+					<a class="list-group-item active" href="#">
+						<i class="icon-dashboard"></i>&nbsp;
+						<span>控制台</span>
+					</a>
+					<a class="list-group-item" href="#">
+						<i class="icon-text-width"></i>&nbsp;
+						<span>文字排版</span>
+					</a>
+					<a class="list-group-item" href="#">
+						<i class="icon-desktop"></i>&nbsp;
+						<span>UI组件</span>
+						<i class="icon-chevron-down pull-right"></i>
+					</a>
+					<a class="list-group-item" href="#">
+						<i class="icon-list"></i>&nbsp;
+						<span>表格</span>
+						<i class="icon-chevron-down pull-right"></i>
+					</a>
+					<a class="list-group-item" href="#">
+						<i class="icon-edit"></i>&nbsp;
+						<span>表单</span>
+						<i class="icon-chevron-down pull-right"></i>
+					</a>
+					<a class="list-group-item" href="#">
+						<i class="icon-list-alt"></i>&nbsp;
+						<span>插件</span>
+					</a>
+					<a class="list-group-item" href="#">
+						<i class="icon-calendar"></i>&nbsp;
+						<span>日历</span>
+						<i class="icon-warning-sign pull-right orange" data-toggle="tooltip" data-placement="right" title="Two important Events"></i>
+					</a>
+					<a class="list-group-item" href="#">
+						<i class="icon-picture"></i>&nbsp;
+						<span>相册</span>
+					</a>
+					<a class="list-group-item" href="#">
+						<i class="icon-tag"></i>&nbsp;
+						<span>更多页面</span>
+						<i class="icon-chevron-down pull-right"></i>
+					</a>
+					<a class="list-group-item" href="#">
+						<i class="icon-file-alt"></i>&nbsp;
+						<span>其他页面</span>
+						<span class="badge badge-primary">5</span>
+
+					</a>
+				</div>
+			</div>
+			<!--侧边栏结束-->
+
+			<!--右边内容区开始-->
+			<div class="page-content col-md-9 col-lg-10 col-sm-8">
+
+				<div class="row">
+					<ol class="breadcrumb top-menu">
+						<li>
+							<i class="icon-home black icon-2x"></i>&nbsp;
+							<a href="admin.html">首页</a>
+						</li>
+						<li class="active">控制台</li>
+					</ol>
+				</div>
+
+				<ol class="breadcrumb list-menu">
+					<li>
+						<h3 class="blue">控制台</h3></li>
+					<li class="active">查看</li>
+				</ol>
+
+				<div class="alert alert-success alert-dismissible">
+					<i class="icon-ok"></i>
+					<span>欢迎使用
+						<strong>Ace后台管理系统(v1.2),</strong>
+						轻量级好用的后台管理系统模版.
+					</span>
+					<button class="close" data-dismiss="alert">&times;</button>
+				</div>
+
+				<!--信息框开始-->
+				<div class="infobox col-lg-2 col-md-3 col-sm-6 ">
+					<button class="btn btn-success">
+						<i class="icon-comments icon-2x"></i>
+					</button>
+					<span>
+                         	<span class="infobox-number text-success">32</span>
+					<span class="text-success pull-right">8% <i class="icon-chevron-up"></i></span>
+					<span class="infobox-describe">2个评论</span>
+					</span>
+				</div>
+				<div class="infobox col-lg-2 col-md-3 col-sm-6">
+					<button class="btn btn-info">
+						<i class="icon-twitter icon-2x"></i>
+					</button>
+					<span>
+                         	<span class="infobox-number text-info">11</span>
+					<span class="text-success pull-right">32% <i class="icon-chevron-up"></i></span>
+					<span class="infobox-describe">新粉丝</span>
+					</span>
+				</div>
+				<div class="infobox col-lg-2 col-md-3 col-sm-6">
+					<button class="btn btn-warning">
+						<i class="icon-shopping-cart icon-2x"></i>
+					</button>
+					<span>
+                       <span class="infobox-number text-warning">8</span>
+					<span class="text-danger pull-right">4% <i class="icon-chevron-down"></i></span>
+					<span class="infobox-describe">新订单</span>
+					</span>
+				</div>
+				<div class="infobox col-lg-2 col-md-3 col-sm-6">
+					<button class="btn btn-danger">
+						<i class="icon-comments icon-2x"></i>
+					</button>
+					<span>
+                         <span class="infobox-number text-danger">7</span>
+					<span class="infobox-describe">调查</span>
+					</span>
+
+				</div>
+				<div class="infobox col-lg-2 col-md-3 col-sm-6">
+					<button class="btn btn-default">
+						<i class="icon-signal icon-2x orange"></i>
+					</button>
+					<span>
+                         	<span class="infobox-number orange">6,251</span>
+					<span class="text-success pull-right">7.2% <i class="icon-chevron-up"></i></span>
+					<span class="infobox-describe">页面查看次数</span>
+					</span>
+				</div>
+				<div class="infobox col-lg-2 col-md-3 col-sm-6">
+
+					<button class="btn btn-default blue">42%</button>
+
+					<span>
+                         <span class="infobox-number blue">交易使用</span>
+					<span class="infobox-describe">~剩余58GB</span>
+					</span>
+				</div>
+				<!--信息区结束-->
+
+				<!--数据小计区开始-->
+				<div class="sum-area clearfix">
+					<div class="panel panel-success col-sm-4 col-xs-6">
+						<div class="panel-heading text-center">
+							<i class="icon-circle-blank"></i>
+							<span>任务完成</span>
+						</div>
+						<div class="panel-body">
+							<button class="btn btn-default btn-block">
+								<div class="active progress-bar progress-bar-success progress-bar-striped" style="width: 61%;">
+									<span>61%</span>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div class="panel panel-info col-sm-4 col-xs-6">
+						<div class="panel-heading text-center">
+							<i class="icon-signal"></i>
+							<span>获得</span>
+						</div>
+						<div class="panel-body">
+							<button class="btn btn-primary center-block">$32000</button>
+						</div>
+					</div>
+					<div class="panel panel-default col-sm-4 col-xs-6">
+						<div class="panel-heading text-center">
+							<i class="icon-download-alt"></i>
+							<span>下载次数</span>
+						</div>
+						<div class="panel-body">
+							<button class="btn center-block">1,207次</button>
+						</div>
+					</div>
+				</div>
+				<!--数据小计区结束-->
+
+				<!--表格区域开始-->
+				<div class="table-area col-md-6">
+					<h4>
+						<i class="icon-star orange"></i>
+						<span class="blue">热门域名</span>
+						<button class="btn btn-sm pull-right" data-toggle="collapse" data-target="#table1">
+							<i class="icon-angle-down"></i>
+						</button>
+				    </h4>
+
+					<div class="collapse" id="table1">
+						<table class="table table-hover table-striped table-condensed">
+							<tr>
+								<th><i class="icon-caret-right blue"></i> 名称</th>
+								<th><i class="icon-caret-right blue"></i> 价格</th>
+								<th><i class="icon-caret-right blue"></i> 状态</th>
+							</tr>
+							<tr>
+								<td>internet.com</td>
+								<td>
+									<del class="orange">$29.99</del>
+									<strong class="text-success">$19.99</strong>
+								</td>
+								<td>
+									<label class="label label-primary">销售中</label>
+								</td>
+							</tr>
+							<tr>
+								<td>online.com</td>
+								<td>
+									<strong class="text-success">$16.45</strong>
+								</td>
+								<td>
+									<label class="label label-success">可用</label>
+								</td>
+							</tr>
+							<tr>
+								<td>newnet.com</td>
+								<td>
+									<strong class="text-">$19.99</strong>
+								</td>
+								<td>
+									<label class="label label-danger ">待定</label>
+								</td>
+							</tr>
+							<tr>
+								<td>web.com</td>
+								<td>
+									<del class="orange">$24.99</del>
+									<strong class="text-success">$19.95</strong>
+								</td>
+								<td>
+									<label class="label label-default"><del>无货</del></label>
+								</td>
+							</tr>
+							<tr>
+								<td>internet.com</td>
+								<td>
+									<strong class="text-success">$12</strong>
+								</td>
+								<td>
+									<label class="label label-warning label-sm">售完</label>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--表格区域结束-->
+
+				<!--图片库区域开始-->
+				<div class="pic-area col-md-6">
+					<h4>
+						<i class="icon-picture orange"></i>
+						<span class="blue">图酷</span>
+						<button class="btn btn-sm pull-right" data-toggle="collapse" data-target="#gallery">
+							<i class="icon-angle-down"></i>
+						</button>
+				    </h4>
+					<div id="gallery" class="collapse text-center">
+						<div class="col-lg-3 col-sm-4 col-xs-6 ">
+							<a href="#" data-toggle="modal" data-target="#img1">
+								<img class="img-thumbnail" src="img/thumb-1.jpg" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-4 col-xs-6">
+							<a href="#" data-toggle="modal" data-target="#img2">
+								<img class="img-thumbnail" src="img/thumb-2.jpg" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-4 col-xs-6">
+							<a href="#" data-toggle="modal" data-target="#img3">
+								<img class="img-thumbnail" src="img/thumb-3.jpg" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-4 col-xs-6">
+							<a href="#" data-toggle="modal" data-target="#img4">
+								<img class="img-thumbnail" src="img/thumb-4.jpg" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-4 col-xs-6">
+							<a href="#" data-toggle="modal" data-target="#img5">
+								<img class="img-thumbnail" src="img/thumb-5.jpg" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-4 col-xs-6">
+							<a href="#" data-toggle="modal" data-target="#img6">
+								<img class="img-thumbnail" src="img/thumb-6.jpg" />
+							</a>
+						</div>
+						<div class="modal fade" id="img1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h3 class="modal-title">早晨</h3>
+									</div>
+									<div class="modal-body">
+										<img width="100%" src="img/image-1.jpg" />
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal fade" id="img2">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h3 class="modal-title">美食</h3>
+									</div>
+									<div class="modal-body">
+										<img width="100%" src="img/image-2.jpg" />
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal fade" id="img3">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h3 class="modal-title">花儿</h3>
+									</div>
+									<div class="modal-body">
+										<img width="100%" src="img/image-3.jpg" />
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal fade" id="img4">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h3 class="modal-title">肆意</h3>
+									</div>
+									<div class="modal-body">
+										<img width="100%" src="img/image-4.jpg" />
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal fade" id="img5">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h3 class="modal-title">晨光</h3>
+									</div>
+									<div class="modal-body">
+										<img width="100%" src="img/image-5.jpg" />
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal fade" id="img6">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h3 class="modal-title">夕阳</h3>
+									</div>
+									<div class="modal-body">
+										<img width="100%" src="img/image-6.jpg" />
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--图片库区域结束-->
+			</div>
+			<!--右边内容区结束-->
+		</article>
+
+		<!--主体部分结束-->
+
+		<a id="up-top-btn" class="btn btn-warning btn-sm" href="#">
+			<i class="icon-double-angle-up"></i>
+			</track>
+
+			<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+			<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+			<!--引入Jquery库与bootstrapJS库-->
+			<script type="text/javascript">
+				$(function() {
+					$('[data-toggle="tooltip"]').tooltip();
+					$("#table1").collapse("show");
+					$("#gallery").collapse("show");
+				});
+			</script>
+	</body>
+
+</html>

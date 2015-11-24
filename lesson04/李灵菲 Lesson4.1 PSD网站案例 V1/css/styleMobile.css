@@ -1,0 +1,204 @@
+/*引入字体*/
+@font-face {
+	font-family: "lato-l";
+	src: local(Lato-Light), url(../font/Lato-Light.ttf) format("truetype");
+}
+@font-face {
+	font-family: "lato-regular";
+	src: local(Lato-Regular),url(../font/Lato-Regular.ttf) format("truetype");
+}
+/*全局字体*/
+
+html {
+	font-family: "lato";
+	-webkit-font-smoothing: antialiased;
+}
+
+.lato-l{
+	font-family: "lato-l";
+}
+
+.lato{
+	font-family: "lato-regular";
+}
+
+/*头部样式开始*/
+.header {
+	background: #27AE60;
+	position: relative;
+	overflow: hidden;
+}
+#flag {
+	position: absolute;
+	display: inline-block;
+	width: 85px;
+	height: 98px;
+	background: url(../mobileImg/icon.png) no-repeat;
+	background-position: -10px -10px;
+}
+
+/*导航栏开始----*/
+#nav-btn {
+	position: absolute;
+	border: 1px solid white;
+	outline: nones;
+	background: transparent;
+	color: white;
+	padding: 0.5rem 1rem;
+	box-shadow: 0 0 1px grey inset;
+	font-size: 1rem;
+	left: 2%;
+	top: 3%;
+}
+#nav-link {
+	position: absolute;
+	padding: 0.5rem 1rem;
+	right: 0;
+	font-size: 1rem;
+}
+#nav-link a {
+	color: white;
+	margin: 0 0.3rem;
+}
+#nav-link a:hover {
+	text-shadow: 0 0 10px white;
+	outline: 1px solid #D2E5FF;
+	border-radius: 3px;
+}
+/*----导航栏结束*/
+
+.header #h-title {
+	width: 100%;
+	font-size: 3rem;
+	color: white;
+	position: absolute;
+	display: block;
+	text-align: center;
+	top: 35%;
+}
+
+.header #h-btn {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	top: 70%;
+}
+.header #h-btn button {
+	font-size: 1.5rem;
+	color: white;
+	border: none;
+	box-shadow: 0 0 5px #2DCB71;
+	border-radius: 5px;
+	padding: 1rem 3rem;
+	background: #2DCB71;
+}
+/*头部样式结束*/
+/*身体样式开始*/
+
+.body .b-title {
+	margin: 5% 10%;
+	text-align: center;
+	line-height: 2.5rem;
+	font-size: 2rem;
+}
+.body .b-content {
+	margin: 5% 15%;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	text-align: center;
+}
+.body .b-box-title {
+	text-align: center;
+	font-size: 2rem;
+	color: #7F8C8D;
+}
+.body .b-boxes {
+	text-align: center;
+	margin: 1% 1%;
+}
+.body .b-btn-wrap {
+	margin-top: 3%;
+	text-align: center;
+}
+.body #b-btn {
+	font-size: 1rem;
+	outline: none;
+	background: transparent;
+	border: 2px solid #989A9B;
+	border-radius: 5px;
+	padding: 0.5rem 3rem;
+	color: #989A9B;
+}
+/*身体样式结束*/
+/*脚部样式开始*/
+
+.footer .f-title {
+	text-align: center;
+	color: #989A9B;
+	margin: 15% 6% 1% 6%;
+	font-size: 1.5rem;
+}
+.footer .f-icon {
+	text-align: center;
+}
+.footer .f-icon img {
+	margin: 0 4%;
+	vertical-align: middle;
+	width: 12%;
+}
+.footer .f-about {
+	margin-top: 3%;
+	padding: 3%;
+	background: #989a9b;
+}
+.footer .f-about i {
+	font-size: 0.8rem;
+	color: white;
+	margin: 0 2%;
+	position: relative;
+}
+.footer .f-about i:hover {
+	cursor: pointer;
+}
+.footer #share1:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -8px;
+	top: 0px;
+	width: 6px;
+	height: 12px;
+	background: url(../mobileImg/icon.png);
+	background-position: -107px -222px;
+}
+.footer #share2:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -18px;
+	top: 0px;
+	width: 16px;
+	height: 12px;
+	background: url(../mobileImg/icon.png);
+	background-position: -163px -118px;
+}
+.footer #share3:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -14px;
+	top: 0px;
+	width: 12px;
+	height: 12px;
+	background: url(../mobileImg/icon.png);
+	background-position: -168px -10px;
+}
+.footer #right {
+	float: right;
+	color: white;
+	font-size: 0.8rem;
+	position: relative;
+	top: 5px;
+}
+/*脚部样式结束*/

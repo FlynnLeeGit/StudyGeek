@@ -1,0 +1,49 @@
+img {
+	border: 0\9;
+}
+/*ie浏览器下图片边框问题*/
+.nav {
+	+margin-top: 16px;
+}
+
+#more-text{
+	_font-size: 13px;
+}
+
+#moreBtn {
+	+display: inline-block;
+	+padding-top: 5px;
+	+margin-left: 9px;
+	+vertical-align: middle;
+}
+
+.more li:first-child {
+	+margin-top: -5px;
+}
+.nav a {
+	+margin-left: 12px;
+}
+.more {
+	_positiong: absolute;
+	_padding-top: 26px;
+	_padding-bottom: 50px;
+	/*更多产品栏下ie6高度边距不正确的问题*/
+}
+.more li {
+	+margin-top: -7px;
+	/*修正ie7下li标签间距过宽问题*/
+}
+.spliter {
+	_font-size: 1px;
+	/*修正ie下div最小高度不能小于文字高度的问题*/
+}
+.more li img {
+	+margin-bottom: 2px;
+}
+#searchBox {
+	+width: 528px;
+	/*ie下的3像素问题*/
+}
+.setting {
+	+border: 1px solid #D3D3D3;
+}
