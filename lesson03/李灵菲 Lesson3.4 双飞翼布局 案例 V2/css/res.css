@@ -1,0 +1,39 @@
+/*响应式边栏效果*/
+
+
+/*副边栏及右调节按钮消失*/
+@media only screen and (min-width: 750px) and (max-width: 970px) {
+	body {
+		font-size: 1.5rem;
+	}
+	.right {
+		display: none;
+	}
+	.rangeRight {
+		display: none;
+	}
+	.middleContent {
+		margin-right: 0;
+	}
+}
+
+/*主边栏及左调节按钮消失*/
+@media only screen and (max-width: 750px) {
+	body {
+		font-size: 1rem;
+	}
+	
+	.right,
+	.left {
+		display: none;
+	}
+	
+	.middleContent {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.rangeLeft,
+	.rangeRight {
+		display: none;
+	}
+}

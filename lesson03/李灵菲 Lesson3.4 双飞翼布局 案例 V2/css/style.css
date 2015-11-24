@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-width: 320px;
+	font-size: 2rem;
+	font-family: arial;
+	text-align: center;
+}
+
+/*控制区样式开始*/
+.control {
+	font-size: 1rem;
+	width: 90%;
+	margin: 0 auto;
+}
+.range {
+	width: 150px;
+}
+.rangeLeft {
+	float: left;
+}
+.rangeRight {
+	float: right;
+}
+/*控制区域样式结束*/
+
+.container {
+	zoom: 1;
+}
+
+.clearfix:before {
+	content: "";
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+/*头部样式*/
+
+.header {
+	line-height: 100px;
+	height: 100px;
+	background-color: #00B2EE;
+}
+/*文章主体*/
+
+.article {
+	overflow: hidden;
+}
+/*主体内容样式*/
+
+.middle {
+	width: 100%;
+	float: left;
+	background-color: #F0FFFF;
+	overflow: hidden;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+.middleContent {
+	margin-left: 300px;
+	margin-right: 200px;
+}
+/*左右边栏 负边距使其定位准确*/
+
+.left {
+	width: 300px;
+	float: left;
+	background: #FFD700;
+	margin-left: -100%;
+	overflow: hidden;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	box-shadow: 5px 0px 5px -5px #333;
+}
+.right {
+	width: 200px;
+	float: left;
+	background: #FFC1C1;
+	margin-left: -200px;
+	overflow: hidden;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	box-shadow: -5px 0px 5px -5px #333;
+}
+/*脚部样式*/
+
+.footer {
+	line-height: 100px;
+	height: 100px;
+	background-color: #b1ef76;
+}

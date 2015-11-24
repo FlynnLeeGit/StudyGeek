@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>双飞翼布局实例 </title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/res.css" />
+
+	<body>
+		<!--控制调节区-->
+		<div class="control">
+			<div class="rangeLeft">
+				<input id="lr" class="range" type="range" min="100" max="300" value="300" />
+				<span>左侧边栏调节<strong id="lr-text">300</strong>px</span>
+			</div>
+			<div class="rangeRight">
+				<input id="rr" class="range" type="range" min="50" max="200" value="200" />
+				<span>右侧边栏调节<strong id="rr-text">200</strong>px</span>
+			</div>
+		</div>
+
+		<!--双飞翼布局容器-->
+		<div class="container clearfix">
+
+			<!--头部-->
+			<div class="header">双飞翼布局 主内容高度自适应</div>
+
+			<!--文章主体-->
+			<div class="article">
+
+				<!--主内容区开始 优先加载-->
+				<div class="middle">
+					<div class="middleContent">
+						I'm Middle 我是中间内容 先加载我哦 I'm Middle 我是中间内容 先加载我哦 I'm Middle 我是中间内容 先加载我哦 I'm Middle 我是中间内容 先加载我哦 I'm Middle 我是中间内容 先加载我哦 I'm Middle 我是中间内容 先加载我哦 I'm Middle 我是中间内容 先加载我哦 I'm Middle 我是中间内容 先加载我哦
+					</div>
+				</div>
+				<!--主内容区结束-->
+
+				<!--左右边栏-->
+				<div class="left">
+					I'm Left Side 我是左 主边栏
+				</div>
+				<div class="right">
+					I'm Right Side 我是右 副边栏
+				</div>
+
+			</div>
+
+			<!--脚部-->
+			<div class="footer">
+				I'm Footer 我是脚部
+			</div>
+		</div>
+		<!--文章主体结束-->
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

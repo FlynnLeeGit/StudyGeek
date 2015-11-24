@@ -1,0 +1,159 @@
+
+/*动画类加载*/
+.eyesAnimation {
+	-webkit-animation: eyesBlink 3s linear infinite;
+	-moz-animation: eyesBlink 3s linear infinite;
+	animation: eyesBlink 3s linear infinite;
+}
+.cheekAnimation {
+	-webkit-animation: cheekBlink 1s linear infinite;
+	-moz-animation: cheekBlink 1s linear infinite;
+	animation: cheekBlink 1s linear infinite;
+}
+.noseAnimation {
+	-webkit-animation: noseBlink 3s linear infinite;
+	-moz-animation:noseBlink 3s linear infinite ;
+	animation: noseBlink 3s linear infinite;
+}
+.heartAnimation {
+	-webkit-animation: heartShinning 1s linear infinite;
+	-moz-animation:heartShinning 1s linear infinite ;
+	animation: heartShinning 1s linear infinite;
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+}
+.armAnimation {
+	-webkit-animation: shakeHand 2s infinite;
+	-moz-animation:shakeHand 2s infinite ;
+	animation: shakeHand 2s infinite;
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+}
+
+
+/*眼睛动画*/
+@-webkit-keyframes eyesBlink {
+	0% {
+		-webkit-transform: scaleY(1);
+	}
+	50% {
+		-webkit-transform: scaleY(0.7);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}
+}
+
+@-moz-keyframes eyesBlink {
+	0% {
+		-moz-transform: scaleY(1);
+	}
+	50% {
+		-moz-transform: scaleY(0.7);
+	}
+	100% {
+		-moz-transform: scaleY(1);
+	}
+}
+
+/*脸颊动画*/
+@-webkit-keyframes cheekBlink {
+	0% {
+		-webkit-transform: scaleY(1);
+	}
+	50% {
+		-webkit-transform: scaleY(1.2);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}
+}
+
+
+@-moz-keyframes noseBlink {
+	0% {
+		-moz-transform: scaleX(1);
+	}
+	50% {
+		-moz-transform: scaleY(0.8) translateY(-30px);
+	}
+	100% {
+		-moz-transform: scaleY(1);
+	}
+}
+
+/*鼻线动画*/
+@-webkit-keyframes noseBlink {
+	0% {
+		-webkit-transform: scaleX(1);
+	}
+	50% {
+		-webkit-transform: scaleY(0.8) translateY(-30px);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}
+}
+@-moz-keyframes noseBlink {
+	0% {
+		-moz-transform: scaleX(1);
+	}
+	50% {
+		-moz-transform: scaleY(0.8) translateY(-30px);
+	}
+	100% {
+		-moz-transform: scaleY(1);
+	}
+}
+
+/*心脏颜色动画-----*/
+@-webkit-keyframes heartShinning {
+	0% {
+		background: transparent;
+	}
+	50% {
+		background: teal;
+		opacity: 0.6;
+		box-shadow: 0 0 20px #505050;
+	}
+	100% {
+		background: transparent;
+	}
+}
+@-moz-keyframes heartShinning {
+	0% {
+		background: transparent;
+	}
+	50% {
+		background: teal;
+		opacity: 0.6;
+		box-shadow: 0 0 20px #505050;
+	}
+	100% {
+		background: transparent;
+	}
+}
+
+/*摇动手臂动画*/
+@-webkit-keyframes shakeHand {
+	0% {
+		-webkit-transform: rotate(-11deg);
+	}
+	50% {
+		-webkit-transform: rotate(-20deg);
+	}
+	100% {
+		-webkit-transform: rotate(-11deg);
+	}
+}
+@-moz-keyframes shakeHand {
+	0% {
+		-moz-transform: rotate(-11deg);
+	}
+	50% {
+		-moz-transform: rotate(-20deg);
+	}
+	100% {
+		-moz-transform: rotate(-11deg);
+	}
+}

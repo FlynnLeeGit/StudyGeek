@@ -1,0 +1,150 @@
+body {
+	background:linear-gradient(transparent 0%,grey 100%);
+}
+.view {
+	width: 300px;
+	height: 300px;
+	margin: 300px auto;
+	/*3d属性*/
+	
+	-webkit-transform-style: preserve-3d;
+	-webkit-perspective: 0;
+	-webkit-perspective-origin: 150px 150px;
+	-webkit-transform-origin: 150px 150px 0;
+	/*动画属性*/
+	-webkit-animation: boxRotate 25s infinite;
+	
+	animation: boxRotate 25s infinite;
+}
+@-webkit-keyframes boxRotate {
+	from {
+		-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+	to {
+		-webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);
+	}
+}
+.view:hover {
+	opacity: 1;
+	cursor: default;
+	-webkit-animation-play-state: paused;
+	-webkit-transition: opacity 1s ease-in;
+}
+/*子元素样式开始*/
+
+.view div {
+	position: absolute;
+	font-family: arial;
+	width: 300px;
+	height: 300px;
+	border: 1px dotted black;
+	text-align: center;
+	opacity: 0.8;
+	line-height: 300px;
+	font-size: 1rem;
+	color: white;
+	
+	text-shadow: 0 0 3px darkgray;
+	box-shadow: 0 0 20px grey inset;
+}
+
+/*魔方九宫格样式*/
+.piece div{
+	line-height: 100px;
+	width: 90px;
+	height: 90px;
+	opacity: 1;
+	border: 5px solid black;
+	box-shadow: 0 0 10px black inset;
+}
+
+
+.one{
+	left: 0;
+	top: 0;
+}
+.two {
+	left: 100px;
+	top: 0;
+}
+.three{
+	left: 200px;
+	top: 0;
+}
+.four{
+	left: 0;
+	top: 100px;
+}
+.five{
+	left: 100px;
+	top: 100px;
+}
+.six {
+	left: 200px;
+	top: 100px;
+}
+.seven{
+	left: 0;
+	top: 200px;
+}
+.eight {
+	left: 100px;
+	top: 200px;
+}
+.nine{
+    left: 200px;
+	top: 200px;
+}
+
+
+.First {
+	background-image: url(../img/5.jpg);
+	-webkit-transform: translateZ(150px);
+}
+
+.Second {
+	background-image: url(../img/2.jpg);
+	-webkit-transform: rotateX(90deg) translateZ(-150px);
+}
+.Third {
+	background-image: url(../img/3.jpg);
+	-webkit-transform: rotateX(90deg) translateZ(150px);
+}
+.Fourth {
+	background-image: url(../img/4.jpg);
+	-webkit-transform: translateZ(-150px);
+}
+.Fivth {
+	background-image: url(../img/1.jpg);
+	-webkit-transform: rotateY(-90deg) translateZ(150px);
+}
+.Sixth {
+	background-image: url(../img/6.jpg);
+	-webkit-transform: rotateY(90deg) translateZ(150px);
+}
+/*子元素样式结束*/
+
+h2 {
+	padding-top: 10px;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+.control {
+	font-family: "微软雅黑";
+	width: 1000px;
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	margin-left: -450px;
+}
+input[type=button] {
+	border: none;
+	outline: none;
+	padding: 5px 10px;
+	height: 30px;
+	font-size: 16px;
+}
+input[type=button]:hover {
+	color: white;
+	background-color: mediumslateblue;
+}

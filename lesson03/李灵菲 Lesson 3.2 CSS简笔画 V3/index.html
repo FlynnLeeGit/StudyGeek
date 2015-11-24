@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS 简笔画</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/animation.css"/>
+
+	<body>
+		<audio src="audio/baymax.wav" autoplay></audio>
+		<!--音频-->
+		
+		<!--大白主体开始-->
+		<div class="baymax">
+			<!--字幕与按钮-->
+			<button id="btn" type="button" onclick=reload()>重新播放</button>
+			<h2 id="sub" class="subAnimation">Hello~~</h2>
+			
+			<!--脸部-->
+			<div class="face"></div>
+			<div class="face-mask"></div>
+			<div class="eyes eyesAnimation"></div>
+			<div class="cheek cheekAnimation"></div>
+			<div class="nose noseAnimation"></div>
+        
+        
+			<!--左右轮廓线-->
+			<div class="left-body-outline"></div>
+			<div class="right-hand"></div>
+			<div class="right-body-outline"></div>
+			<div class="right-bottom-outline"></div>
+			
+			<!--心脏-->
+			<div class="heart"></div>
+			<div class="heartColor heartAnimation"></div>
+			<div class="heart-line"></div>
+
+			<!--左手（摇动手臂)部分-->
+			<div class="left-hand armAnimation">
+				<div class="left-arm"></div>
+				<div class="fingerOne"></div>
+				<div class="fingerTwo"></div>
+				<div class="fingerThree"></div>
+				<div class="fingerFour"></div>
+			</div>
+		</div>
+		<!--大白主体结束-->
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

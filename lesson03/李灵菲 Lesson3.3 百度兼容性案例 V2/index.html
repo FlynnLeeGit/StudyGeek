@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="./img/bdTitle.png" />
+		<title>百度一下 你就知道</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--引入网页内容样式-->
+		<link rel="stylesheet" type="text/css" href="css/reponsive.css" />
+		<!--引入响应式样式-->
+	</head>
+
+	<body>
+		<div class="header">
+			<!--头部开始-->
+			<div class="nav" id="nav">
+				<a href="http://news.baidu.com/">新闻</a>
+				<a href="http://www.hao123.com/">hao123</a>
+				<a href="http://map.baidu.com/">地图</a>
+				<a href="http://v.baidu.com/">视频</a>
+				<a href="http://tieba.baidu.com/">贴吧</a>
+				<a style="font-weight: normal" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+				<a id="settingBtn" style="font-weight: normal" class="login_setting" href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+				<span id="moreBtn">更多产品</span>
+			</div>
+			<!--头部结束-->
+		</div>
+
+		<!--设置页-->
+		<ul class="setting" id="setting">
+			<li>搜索设置</li>
+			<li>高级搜索</li>
+			<li>开启预测</li>
+			<li>搜索历史</li>
+		</ul>
+
+		<!--更多产品页开始-->
+		<div class="moreProduct">
+			<ul class="more" id="more">
+				<li><a id="more-text" href="javascript:;">更多产品</a></li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://www.nuomi.com/?cid=002540"><img src="img/1.png">糯米</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://zhidao.baidu.com/"><img src="img/2.png" />知道</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://music.baidu.com/"><img src="img/3.png" />音乐</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://image.baidu.com/"><img src="img/4.png" />图片</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://wenku.baidu.com/"><img src="img/5.png" />文库</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://top.baidu.com/"><img src="img/6.png" />风云榜</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://e.baidu.com/?refer=888"><img src="img/7.png" />百度推广</a>
+				</li>
+				<li class="spliter"></li>
+				<li><a style="text-decoration: underline;" href="https://www.baidu.com/more/">全部产品>></a></li>
+			</ul>
+		</div>
+		<!--更多产品页结束-->
+
+		<!--内容搜索区及logo区开始-->
+		<div class="body" id="body">
+			<div class="img">
+				<a href="https://www.baidu.com/s?wd=%E4%B8%AD%E7%A7%8B%E8%8A%82&oq=%E5%9B%BD%E5%BA%86%E8%8A%82&&tn=SE_pshlcjsy_xef5bmh9">
+					<img src="https://www.baidu.com/img/270_0cd9b6c5497a57ac83f5d9956af38da9.gif" alt="bd_logo" />
+				</a>
+			</div>
+			<div class="search">
+				<form action="https://www.baidu.com/s?" method="get">
+					<input id="searchBox" type="text" name="wd" autofocus="autofocus" />
+					<input id="searchBtn" type="submit" value="百度一下" />
+				</form>
+			</div>
+		</div>
+		<!--内容搜索区及logo区结束-->
+
+		<!--页脚关于开始-->
+		<div class="foot" id="foot">
+			<div class="aboutBaidu">
+				<a href="http://anquan.baidu.com/zt/win10/?key=3">Win10免费升级</a>
+				<a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+				<a href="http://home.baidu.com/">关于百度</a>
+				<a href="http://ir.baidu.com/">About Baidu</a>
+			</div>
+			<div class="about">
+				<span>©2015 Baidu</span>
+				<a href="http://www.baidu.com/duty/">使用百度前必读</a>
+				<a href="http://jianyi.baidu.com/">意见反馈</a>
+				<span>京ICP证030173号 </span>
+			</div>
+
+		</div>
+		<!--页脚关于结束-->
+
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<!--[if IE]>
+	        <link rel="stylesheet" type="text/css" href="css/cssHack.css"/>
+	        <script src="js/res.js" type="text/javascript" charset="utf-8"></script>
+        <![endif]-->
+        
+         <!--ie下引入css样式  以及js响应式样式调整及js hack纠正hover问题-->
+	</body>
+
+</html>

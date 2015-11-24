@@ -1,0 +1,60 @@
+/*自适应分辨率样式*/
+
+
+/*宽度自适应*/
+@media only screen and (min-width: 800px) {
+	.nav {
+		right: 15px;
+	}
+	.more {
+		right: 0;
+	}
+	.body {
+		left: 50%;
+		margin-left: -320px;
+	}
+	.foot {
+		left: 50%;
+		margin-left: -350px;
+	}
+	.setting{
+		right: 70px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.nav {
+		left: 335px;
+	}
+	.more {
+		left: 712px;
+	}
+	.body {
+		left: 80px;
+	}
+	.foot {
+		left: 50px;
+	}
+	.setting{
+		left: 652px;
+	}
+}
+
+
+/*高度自适应*/
+@media only screen and (min-height: 600px) {
+	.body {
+		bottom: 62%;
+	}
+	.foot {
+		bottom: 50px;
+	}
+}
+@media only screen and (max-height: 600px) {
+	.body {
+		top: 40px;
+	}
+	.foot {
+		top: 450px;
+	}
+}

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS 3D 效果案例</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<h2>CSS 3D 随机色彩魔方</h2>
+
+		<!--魔方六面体容器开始-->
+		<div class="view">
+			<div class="First piece">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+				<div class="four"></div>
+				<div class="five"></div>
+				<div class="six"></div>
+				<div class="seven"></div>
+				<div class="eight"></div>
+				<div class="nine"></div>
+			</div>
+			<div class="Second piece">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+				<div class="four"></div>
+				<div class="five"></div>
+				<div class="six"></div>
+				<div class="seven"></div>
+				<div class="eight"></div>
+				<div class="nine"></div>
+			</div>
+			<div class="Third piece">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+				<div class="four"></div>
+				<div class="five"></div>
+				<div class="six"></div>
+				<div class="seven"></div>
+				<div class="eight"></div>
+				<div class="nine"></div>
+			</div>
+			<div class="Fourth piece">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+				<div class="four"></div>
+				<div class="five"></div>
+				<div class="six"></div>
+				<div class="seven"></div>
+				<div class="eight"></div>
+				<div class="nine"></div>
+			</div>
+			<div class="Fivth piece">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+				<div class="four"></div>
+				<div class="five"></div>
+				<div class="six"></div>
+				<div class="seven"></div>
+				<div class="eight"></div>
+				<div class="nine"></div>
+			</div>
+			<div class="Sixth piece">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+				<div class="four"></div>
+				<div class="five"></div>
+				<div class="six"></div>
+				<div class="seven"></div>
+				<div class="eight"></div>
+				<div class="nine"></div>
+			</div>
+		</div>
+		<!--魔方六面体容器结束-->
+
+		<!--控制按钮结构开始-->
+		<div class="control">
+			<input id="distance" type="range" min="0" max="1000" value="0" />
+			<span id="dis-Area">透视距离 0px</span>
+			<input id="viewX" type="range" min="-450" max="600" value="150" />
+			<span id="viewX-area">视野原点X 150px</span>
+			<input id="viewY" type="range" min="-450" max="450" value="150" />
+			<span id="viewY-area">视野原点Y 150px</span>
+
+			<input type="button" id="reset" value="还原坐标" />
+			<input type="button" onclick=paint() value="随机取色" />
+		</div>
+		<!--控制结构结束-->
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
