@@ -1,0 +1,48 @@
+@charset "utf-8";
+$baseFontSize:13px !default;  //基础字体大小
+$baseFont:"microsoft yahei";  //基础字形
+$white:#fff;
+$gray:#333;
+$lightgray:#e4e4e4;
+$lightgray2:#e0e0e0;
+$majorColor:#7bda95;   //网站主基色 
+$secondColor:#35B558;  //网站副基色
+$pageWidth:1000px;     //页面宽度
+$mainHeight:303px;      //主体区高度
+
+@import 'mixin';  //导入mixin模组
+
+@import 'widget/reset';  //导入reset 样式
+@import 'widget/button';  //导入按钮样式
+@import 'widget/topheader';  //导入头部栏样式
+
+nav{     //导航栏样式
+    height: 42px;
+    line-height: 42px;
+    box-shadow: 0 2px 2px $lightgray;
+    @import 'widget/nav';
+}
+
+article{         //文章主体
+    width: $pageWidth;
+    margin: 20px auto;
+    position: relative;
+
+    .main{           //主体区
+        @import 'widget/aside';    //左侧边菜单栏
+        @import 'widget/lb';        //轮播区
+        @import 'widget/intro';     //右侧极客学院介绍
+    }
+
+    @import 'widget/mainVideo'; //首页推荐视频
+
+    .big-title {            //标题
+        font-size: 18px;
+        padding: 18px 0;
+    }
+
+    @import 'widget/career';      //职业路径
+    @import 'widget/knowledge';   //知识体系
+    @import 'widget/school';      //合作院校
+}
+//文章结束

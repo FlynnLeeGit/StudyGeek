@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="icon" type="image/png" href="./img/bdTitle.png" />
+		<title>百度一下 你就知道</title>
+
+		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		<!--引入网页内容样式-->
+		<link rel="stylesheet" type="text/css" href="static/css/reponsive.css" />
+		<!--引入PC版响应式样式-->
+		<link rel="stylesheet" type="text/css" href="static/css/siteicon.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/pbl.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/pblMediaQuery.css" />
+		<!--引入瀑布流的样式-->
+	</head>
+
+	<body>
+		<div class="header">
+			<!--头部开始-->
+			<div class="nav-bg"></div>
+
+			<!--天气及换肤区-->
+			<div class="weather">
+				<span>上海</span>
+				<span class="temp">22C</span>
+				<span class="dirty-level">轻度</span>
+				<span class="dirty-num">110</span>
+				<span>|</span>
+				<a href="http://vip.baidu.com/treasure?vip_frm=super_box">宝箱</a>
+				<a id="skinBtn" href="javascript:;">换肤</a>
+
+				<div class="skin-wrap">
+					<div class="skin-box box1"></div>
+					<div class="skin-box box2"></div>
+					<div class="skin-box box3"></div>
+					<div class="skin-box box4"></div>
+					<div class="skin-box box5"></div>
+				</div>
+			</div>
+
+			<!--右上角导航区-->
+			<div class="nav" id="nav">
+				<a href="http://news.baidu.com/">新闻</a>
+				<a href="http://www.hao123.com/">hao123</a>
+				<a href="http://map.baidu.com/">地图</a>
+				<a href="http://v.baidu.com/">视频</a>
+				<a href="http://tieba.baidu.com/">贴吧</a>
+				<a id="accountBtn" style="font-weight: normal" href="javascript:;">Lee</a>
+				<a id="settingBtn" style="font-weight: normal" class="login_setting" href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+				<span id="moreBtn">更多产品</span>
+			</div>
+			<!--头部结束-->
+		</div>
+
+		<!--个人中心页-->
+		<ul class="account">
+			<li>我的VIP</li>
+			<li>个人中心</li>
+			<li>帐号设置</li>
+			<li>意见反馈</li>
+			<li>退出</li>
+		</ul>
+
+		<!--设置页-->
+		<ul class="setting" id="setting">
+			<li>搜索设置</li>
+			<li>高级搜索</li>
+			<li>开启预测</li>
+			<li>搜索历史</li>
+		</ul>
+
+		<!--更多产品页开始-->
+		<div class="moreProduct">
+			<ul class="more" id="more">
+				<li><a id="more-text" href="javascript:;">更多产品</a></li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://www.nuomi.com/?cid=002540"><i class="moreimg img1"></i>糯米</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://zhidao.baidu.com/"><i class="moreimg img2"></i>知道</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://music.baidu.com/"><i class="moreimg img3"></i>音乐</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://image.baidu.com/"><i class="moreimg img4"></i>图片</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://wenku.baidu.com/"><i class="moreimg img5"></i>文库</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://top.baidu.com/"><i class="moreimg img6"></i>风云榜</a>
+				</li>
+				<li class="spliter"></li>
+				<li>
+					<a href="http://e.baidu.com/?refer=888"><i class="moreimg img7"></i>百度推广</a>
+				</li>
+				<li class="spliter"></li>
+				<li><a style="text-decoration: underline;" href="https://www.baidu.com/more/">全部产品>></a></li>
+			</ul>
+		</div>
+		<!--更多产品页结束-->
+
+		<!--内容搜索区及logo区开始-->
+		<div class="body body-before" id="body">
+			<div class="img">
+				<a href="javascript:;">
+					<img src="static/img/bdlogo.png" alt="bd_logo" style="width: 270px;border: 0;" />
+				</a>
+			</div>
+
+			<div class="search">
+				<img class="bd-after-logo" src="static/img/bdwhitelogo.gif" alt="bdwhite-log" />
+				<form action="https://www.baidu.com/s?" method="get">
+					<input id="searchBox" type="text" name="wd" autocomplete="off" autofocus />
+					<input id="searchBtn" type="submit" value="百度一下" />
+				</form>
+			</div>
+			<!--历史记录内容-->
+			<div class="s-history">
+				<p>历史记录1 <a href="javascript:">删除</a></p>
+				<p>历史记录2 <a href="javascript:">删除</a></p>
+				<p>历史记录3 <a href="javascript:">删除</a></p>
+				<p>历史记录4 <a href="javascript:">删除</a></p>
+				<p>历史记录5 <a href="javascript:">删除</a></p>
+				<p>历史记录6 <a href="javascript:">删除</a></p>
+				<p>历史记录7 <a href="javascript:">删除</a></p>
+				<p>历史记录8 <a href="javascript:">删除</a></p>
+				<p>历史记录9 <a href="javascript:">删除</a></p>
+				<div class="h-control">
+					<a href="">关闭历史</a>
+					<a href="">删除历史</a>
+					<a href="">更多</a>
+				</div>
+			</div>
+		</div>
+
+		<!--内容搜索区及logo区结束-->
+
+		<!--内容页面区开始-->
+		<div class="content-wrap">
+			<!--内容导航条-->
+			<ul class="c-tabs">
+				<li class="active">我的关注</li>
+				<li style="display: none;">推荐</li>
+				<li>导航</li>
+				<li>视频</li>
+				<li>购物</li>
+			</ul>
+
+			<div class="back-top"><span>返回顶部</span></div>
+
+			<!--子页面1 我的关注页-->
+			<div class="sub-page sub1">
+				<p class="mysites-title">我的导航(13)</p>
+				<ul class="sites-row">
+					<li><i class="siteicon s-baidu"></i>百度贴吧</li>
+					<li><i class="siteicon s-taobao"></i>淘宝网</li>
+					<li><i class="siteicon s-xinlang"></i>新浪微博</li>
+					<li><i class="siteicon s-youku"></i>优酷网</li>
+					<li><i class="siteicon s-xlw"></i>hao123</li>
+				</ul>
+				<ul class="sites-row">
+					<li><i class="siteicon s-jd"></i>京东商城</li>
+					<li><i class="siteicon s-xlw"></i>新浪</li>
+					<li><i class="siteicon s-fenghuang"></i>凤凰网</li>
+					<li><i class="siteicon s-ymxk"></i>游民星空</li>
+					<li><i class="siteicon s-cnbeta"></i>中文业界资讯站</li>
+				</ul>
+				<ul class="sites-row">
+					<li><i class="siteicon s-cnbeta"></i>cnbeta</li>
+					<li><i class="siteicon s-verycd"></i>veryCD</li>
+					<li><i class="siteicon s-3dm"></i>3dmgame论坛</li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<!--子页面2 推荐页-->
+			<div class="sub-page sub2">
+
+			</div>
+
+			<!--子页面3 导航页-->
+			<div class="sub-page sub3">
+				<div class="dh-arrow-round">
+					<div class="dh-arrow"></div>
+				</div>
+				<div class="s3">
+					<div class="dh-box">
+						<img src="static/img/dh/dh1.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh2.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh3.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh4.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh5.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh6.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh7.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh8.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh9.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh10.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh11.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh12.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh13.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh14.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh15.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh16.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh17.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh18.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh19.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh20.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh21.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh22.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh23.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh24.png" />
+					</div>
+				</div>
+
+				<div class="s3">
+					<div class="dh-box">
+						<img src="static/img/dh/dh1.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh2.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh3.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh4.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh5.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh6.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh7.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh8.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh9.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh10.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh11.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh12.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh13.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh14.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh15.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh16.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh17.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh18.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh19.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh20.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh21.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh22.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh23.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh24.png" />
+					</div>
+				</div>
+
+				<div class="s3">
+					<div class="dh-box">
+						<img src="static/img/dh/dh1.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh2.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh3.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh4.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh5.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh6.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh7.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh8.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh9.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh10.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh11.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh12.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh13.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh14.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh15.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh16.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh17.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh18.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh19.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh20.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh21.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh22.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh23.png" />
+					</div>
+					<div class="dh-box">
+						<img src="static/img/dh/dh24.png" />
+					</div>
+				</div>
+
+			</div>
+
+			<!--子页面4 视频页-->
+			<div class="sub-page sub4">
+
+				<div class="dh-arrow-round">
+					<div class="dh-arrow"></div>
+				</div>
+
+				<div class="s4-row">
+
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp1.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>武林风</h4>
+							<p>8.8</p>
+						</div>
+					</div>
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp2.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>十二道风味 第二季</h4>
+							<p>7.4</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp3.png" />
+						</div>
+						<div class="v-s-title">
+							<p>太浪漫！ 男子直升机上求婚 高空中给女友戴婚戒</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp4.png" />
+						</div>
+						<div class="v-s-title">
+							<p>监拍幼童从车上掉落又被撞 糊涂父亲浑然不知</p>
+						</div>
+					</div>
+
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp5.png" />
+						</div>
+						<div class="v-s-title">
+							<p>杨幂微博重新关注胡歌 网友 愿各自安好</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp6.png" />
+						</div>
+						<div class="v-s-title">
+							<p>丁俊晖 亮相斯诺克锦标赛</p>
+						</div>
+					</div>
+				</div>
+				<div class="s4-row">
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp1.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>武林风</h4>
+							<p>8.8</p>
+						</div>
+					</div>
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp2.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>十二道风味 第二季</h4>
+							<p>7.4</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp3.png" />
+						</div>
+						<div class="v-s-title">
+							<p>太浪漫！ 男子直升机上求婚 高空中给女友戴婚戒</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp4.png" />
+						</div>
+						<div class="v-s-title">
+							<p>监拍幼童从车上掉落又被撞 糊涂父亲浑然不知</p>
+						</div>
+					</div>
+
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp5.png" />
+						</div>
+						<div class="v-s-title">
+							<p>杨幂微博重新关注胡歌 网友 愿各自安好</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp6.png" />
+						</div>
+						<div class="v-s-title">
+							<p>丁俊晖 亮相斯诺克锦标赛</p>
+						</div>
+					</div>
+				</div>
+				<div class="s4-row">
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp1.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>武林风</h4>
+							<p>8.8</p>
+						</div>
+					</div>
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp2.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>十二道风味 第二季</h4>
+							<p>7.4</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp3.png" />
+						</div>
+						<div class="v-s-title">
+							<p>太浪漫！ 男子直升机上求婚 高空中给女友戴婚戒</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp4.png" />
+						</div>
+						<div class="v-s-title">
+							<p>监拍幼童从车上掉落又被撞 糊涂父亲浑然不知</p>
+						</div>
+					</div>
+
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp5.png" />
+						</div>
+						<div class="v-s-title">
+							<p>杨幂微博重新关注胡歌 网友 愿各自安好</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp6.png" />
+						</div>
+						<div class="v-s-title">
+							<p>丁俊晖 亮相斯诺克锦标赛</p>
+						</div>
+					</div>
+				</div>
+				<div class="s4-row">
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp1.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>武林风</h4>
+							<p>8.8</p>
+						</div>
+					</div>
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp2.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>十二道风味 第二季</h4>
+							<p>7.4</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp3.png" />
+						</div>
+						<div class="v-s-title">
+							<p>太浪漫！ 男子直升机上求婚 高空中给女友戴婚戒</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp4.png" />
+						</div>
+						<div class="v-s-title">
+							<p>监拍幼童从车上掉落又被撞 糊涂父亲浑然不知</p>
+						</div>
+					</div>
+
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp5.png" />
+						</div>
+						<div class="v-s-title">
+							<p>杨幂微博重新关注胡歌 网友 愿各自安好</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp6.png" />
+						</div>
+						<div class="v-s-title">
+							<p>丁俊晖 亮相斯诺克锦标赛</p>
+						</div>
+					</div>
+				</div>
+				<div class="s4-row">
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp1.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>武林风</h4>
+							<p>8.8</p>
+						</div>
+					</div>
+					<div class="video-b-box">
+						<div class="v-img">
+							<img src="static/img/sp/sp2.png" />
+						</div>
+						<div class="v-b-title">
+							<h4>十二道风味 第二季</h4>
+							<p>7.4</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp3.png" />
+						</div>
+						<div class="v-s-title">
+							<p>太浪漫！ 男子直升机上求婚 高空中给女友戴婚戒</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp4.png" />
+						</div>
+						<div class="v-s-title">
+							<p>监拍幼童从车上掉落又被撞 糊涂父亲浑然不知</p>
+						</div>
+					</div>
+
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp5.png" />
+						</div>
+						<div class="v-s-title">
+							<p>杨幂微博重新关注胡歌 网友 愿各自安好</p>
+						</div>
+					</div>
+					<div class="video-s-box">
+						<div class="v-s-img">
+							<img src="static/img/sp/sp6.png" />
+						</div>
+						<div class="v-s-title">
+							<p>丁俊晖 亮相斯诺克锦标赛</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sub-page sub5">
+				<div class="dh-arrow-round">
+					<div class="dh-arrow"></div>
+				</div>
+				<!--瀑布流外围主容器-->
+				<div class="container">
+					<!--此处图片内容区 由json对象生成 请看index.js中的	infinite函数-->
+				</div>
+				<!--瀑布流外围主容器结束-->
+			</div>
+			<p class="wheel-to-more">滚动查看更多</p>
+		</div>
+		<!----------内容页面区结束-->
+
+		<!--页脚关于开始-->
+		<div class="foot" id="foot">
+			<div class="about">
+				<a href="https://www.baidu.com/cache/sethelp/help.html">设为首页</a>
+				<span>©2015 Baidu</span>
+				<a href="http://www.baidu.com/duty/">使用百度前必读</a>
+				<a href="http://jianyi.baidu.com/">意见反馈</a>
+				<span>京ICP证030173号 </span>
+			</div>
+		</div>
+
+		<!--页脚关于结束-->
+
+		<script src="static/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/common.js" type="text/javascript" charset="utf-8"></script>
+        <script src="static/js/pbl.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入通用函数-->
+		<script src="static/js/index.js" type="text/javascript" charset="utf-8"></script>
+		<!--瀑布流的js文件-->
+
+	</body>
+
+</html>

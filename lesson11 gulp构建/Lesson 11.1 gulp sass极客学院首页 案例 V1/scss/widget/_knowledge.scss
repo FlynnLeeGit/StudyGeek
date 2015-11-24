@@ -1,0 +1,68 @@
+//zhi shi ti xi@knowledge area stylesheet
+
+.zsts-row {
+  @include flexParent();
+  .z-box{
+    text-align: center;
+    @include flexChild(1);
+    border: 1px solid $lightgray;
+    @include margin(right,-1);
+    @include margin(bottom,-1);
+    box-sizing: border-box;
+    position: relative;
+    height: 122px;
+    @include autopre(transform-style,preserve-3d);
+    @include autopre(transition,all 0.5s);
+
+    .front{
+      background: $white;
+      position: absolute;
+      width: 100%;
+      height: 120px;
+    }
+    .back{
+      background: $lightgray;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      height: 120px;
+      top: 0;
+      @include autopre(transform,rotateY(180deg));
+      @include autopre(backface-visibility,hidden);
+
+      p{
+        font-size: 16px;
+        @include margin(top,20)
+      }
+      .btn{
+        margin: 20px;
+        width: 130px;
+        cursor: pointer;
+      }
+    }
+
+    .zsts{
+      @include margin(top,9);
+    }
+    .z-title{
+      font-size: 14px;
+    }
+    .z-desc{
+      font-size: 14px;
+      color: $majorColor;
+      @include margin(top,3);
+
+    }
+    &:hover{
+      cursor: pointer;
+      @include autopre(transform,rotateY(180deg));
+      @include autopre(transition,all 0.5s);
+    }
+  }
+} 
+.zsts-row:last-of-type>.z-box:last-of-type{
+    $directionArr:right bottom left;
+    @each $i in $directionArr{
+        border-#{$i}-color:transparent;
+    }
+}

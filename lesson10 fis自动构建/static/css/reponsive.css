@@ -1,0 +1,90 @@
+/*@responsive.css*/
+
+
+
+/*自适应分辨率样式*/
+
+
+/*宽度自适应 大于800px*/
+@media only screen and (min-width: 1024px) {
+	.nav {
+		right: 15px;
+	}
+	.more {
+		right: 0;
+	}
+	.body-before{
+		left: 50%;
+		margin-left: -320px;
+	}
+	.body-after .search,.body-after .s-history{
+		left: 50%;
+		margin-left: -320px;
+	}
+	.content-wrap{
+		left: 50%;
+	    margin-left: -450px;
+	}
+	
+	
+	.foot {
+		left: 50%;
+		margin-left: -350px;
+	}
+	.setting{
+		right: 70px;
+	}
+	.account{
+		right: 115px;
+	}
+	
+}
+
+@media only screen and (max-width: 1025px){
+	.nav {
+		left: 447px;
+	}
+	.more {
+		left: 824px;
+	}
+	.body-before {
+		left: 192px;
+	}
+	.body-after .search,.body-after .s-history{
+	   left:195px;
+	}
+	.content-wrap{
+		left:62px;
+	}
+	.foot {
+		left: 152px;
+	}
+	.setting{
+		left: 764px;
+	}
+	.account{
+		left:720px;
+	}
+	
+}
+
+
+/*高度自适应 PC端*/
+@media only screen and (min-height: 800px){
+	.body-before{
+		top: 5.3%;
+	}
+	.foot{
+		position: fixed;
+	    bottom: 15px;
+	}
+}
+@media only screen and (max-height: 800px){
+	.body-before{
+		top: 42px;
+	}
+	.foot{
+		position: absolute;
+        top: 760px;
+	}
+}

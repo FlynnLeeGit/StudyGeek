@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@mixin flexParent(){ //流式布局父级
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+}
+
+@mixin flexChild($num){ //流式布局子级
+  -webkit-box-flex: $num;
+  -moz-box-flex: $num;
+  flex: $num;
+}
+
+@mixin border($direction,$num,$color:transparent){  //边框模组
+  border-#{$direction}:#{$num}px solid $color;
+}
+
+@mixin margin($direction,$num){ //外边距模组
+  margin-#{$direction}:#{$num}px;
+}
+
+@mixin autopre($arg,$value){ //自动前缀
+  -moz-#{$arg}:$value;
+  -webkit-#{$arg}:$value;
+  #{$arg}:$value;
+}
+
+
+//选项卡箭头模组
+@mixin tabActiveArrow($parentHeight:42,$arrowWidth:10,$arrowHeight:5,$color:black){
+  &::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top:($parentHeight/2)+$arrowHeight*2;
+    left: 50%;
+    @include margin(left,-$arrowWidth);
+    border: #{$arrowWidth}px solid $color;
+    border-bottom-width: #{$arrowHeight}px;
+    border-top:#{$arrowHeight}px solid transparent;
+
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+}

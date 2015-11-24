@@ -1,0 +1,31 @@
+//reset stylesheet
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: $baseFont;
+    font-size: $baseFontSize;
+    color: $gray;
+}
+
+ul{
+    @extend html;
+    list-style-type: none;
+}
+
+a{
+    @extend html;
+    text-decoration: none;
+    &:hover{
+        color:$majorColor;
+    }
+}
+
+
+
+
+
+
+
