@@ -1,0 +1,25 @@
+/*知识体系区域图标样式*/
+.zsts{ background:url("../img/zsts.png") top left no-repeat; display: inline-block;}
+.zsts_ios{ width:48px; height:48px; background-position:-10px -10px; }
+.zsts_androidui{ width:48px; height:48px; background-position:-10px -68px; }
+.zsts_arduino{ width:48px; height:48px; background-position:-10px -126px; }
+.zsts_egret{ width:48px; height:48px; background-position:-10px -184px; }
+.zsts_docker{ width:48px; height:48px; background-position:-10px -242px; }
+.zsts_asp{ width:48px; height:48px; background-position:-10px -300px; }
+.zsts_watchkit{ width:48px; height:48px; background-position:-10px -358px; }
+.zsts_gui{ width:48px; height:48px; background-position:-10px -416px; }
+.zsts_com2{ width:48px; height:48px; background-position:-10px -474px; }
+.zsts_com1{ width:48px; height:48px; background-position:-10px -532px; }
+.zsts_cocos2d{ width:48px; height:48px; background-position:-10px -590px; }
+.zsts_csharp{ width:48px; height:48px; background-position:-10px -648px; }
+.zsts_swift{ width:48px; height:48px; background-position:-10px -706px; }
+.zsts_bootstrap{ width:48px; height:48px; background-position:-10px -764px; }
+.zsts_unity{ width:48px; height:48px; background-position:-10px -822px; }
+.zsts_python{ width:48px; height:48px; background-position:-10px -880px; }
+.zsts_c{ width:48px; height:48px; background-position:-10px -938px; }
+.zsts_javaweb{ width:48px; height:48px; background-position:-10px -996px; }
+.zsts_php{ width:48px; height:48px; background-position:-10px -1054px; }
+.zsts_java{ width:48px; height:48px; background-position:-10px -1112px; }
+.zsts_html5{ width:48px; height:48px; background-position:-10px -1170px; }
+.zsts_webfront{ width:48px; height:48px; background-position:-10px -1228px; }
+.zsts_android{ width:48px; height:48px; background-position:-10px -1286px; }

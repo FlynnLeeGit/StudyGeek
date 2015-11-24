@@ -1,0 +1,44 @@
+/*网站通用样式表*/
+* {
+	margin: 0;
+	padding: 0;
+	/*border: 1px dotted blue;*/
+}
+html,
+a,
+ul,
+button {
+	font-family: "微软雅黑";
+	font-size: 13px;
+	color: #333;
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+}
+a:hover {
+	color: #7bda95;
+}
+
+.btn {
+	width: 165px;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+}
+.btn-default {
+	background: #7bda95;
+	color: #fff;
+}
+.btn-default:hover,.btn-outline:hover{
+	background: #35B558;
+	color: #fff;
+	
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	-moz-transition: all 1s;
+}
+.btn-outline {
+	background: #f3fff6;
+	color: #7bda95;
+	border: 1px solid #7bda95;
+}

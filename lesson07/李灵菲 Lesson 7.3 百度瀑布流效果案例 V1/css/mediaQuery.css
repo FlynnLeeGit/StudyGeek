@@ -1,0 +1,21 @@
+/*定义各个分辨率下的图片宽度排布*/
+@media only screen and (max-width: 480px) {
+	.outer-box {
+		width: 50%;
+	}
+}
+@media only screen and (min-width: 480px) {
+	.outer-box {
+		width: 33.3%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.outer-box {
+		width: 25%;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.outer-box {
+		width: 20%;
+	}
+}
