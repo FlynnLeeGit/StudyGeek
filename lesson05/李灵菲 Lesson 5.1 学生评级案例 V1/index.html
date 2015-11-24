@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>分数评级案例</title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<!--引入字体图标库-->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+
+	<body>
+		<!--文章主体-->
+		<article>
+			<!--标题-->
+			<h1>分数评级  拉滑竿即时查看</h1>
+			<!--滑动杆-->
+			<div class="range-wrap">
+				<input type="range" id="score" min="0" max="100" value="60" />
+				<span class="score-text">60</span>
+			</div>
+			<!--评级内容区-->
+			<div class="classLevel">
+				<span id="classTxt">四等生</span>
+				<i class="icon icon-star"></i>
+				<i class="icon icon-star"></i>
+				<i class="icon icon-star"></i>
+				<i class="icon icon-star"></i>
+				<i class="icon icon-star"></i>
+			</div>
+		</article>
+        <!--主体结束-->
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

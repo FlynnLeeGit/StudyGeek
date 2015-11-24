@@ -1,0 +1,69 @@
+body{
+	margin: 0;
+}
+
+/*标题样式*/
+h1 {
+	text-align: center;
+	font-size: 40px;
+	color: indigo;
+	text-shadow: 2px 2px 6px;
+}
+
+/*滑动钮样式*/
+.range-wrap {
+	text-align: center;
+}
+.range-wrap #score {
+	-webkit-appearance: none;
+	display: inline-block;
+	width: 300px;
+	height: 5px;
+	background: darkblue;
+	border-radius: 5px;
+	outline: 0;
+	box-shadow: 0 0 20px teal;
+}
+.range-wrap #score::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	box-shadow: 0 0 20px grey;
+	border-radius: 50%;
+	background: linear-gradient(white 0%, grey 100%);
+}
+.range-wrap .score-text {
+	font-size: 24px;
+	color: indigo;
+}
+
+/*评级样式*/
+.classLevel {
+	text-align: center;
+	text-shadow: 2px 2px 6px;
+	margin: 50px auto;
+	width: 60%;
+	font-size: 38px;
+	font-family: "微软雅黑";
+	color: green;
+	opacity: 0.7;
+	box-shadow: 0 5px 5px -5px darkgrey;
+}
+
+/*星星样式*/
+.icon-star:nth-of-type(1){
+	display: inline-block;
+}
+.icon-star:nth-of-type(2){
+	display: inline-block;
+}
+.icon-star:nth-of-type(3){
+	display: none;
+}
+.icon-star:nth-of-type(4){
+	display: none;
+}
+.icon-star:nth-of-type(5){
+	display: none;
+}

@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+}
+
+/*表格容器*/
+.calculation {
+	text-align: center;
+	padding: 100px auto;
+	background: linear-gradient(grey 0%,white 100%);
+}
+
+/*表格样式开始*/
+table {
+	border-collapse: collapse;
+	display: inline-block;
+	box-shadow: 0 20px 20px -20px teal;
+}
+table caption {
+	font-size: 40px;
+	padding: 10px;
+	font-family: "微软雅黑";
+	color: whitesmoke;
+	text-shadow: 5px 5px 20px teal;
+	
+}
+td {
+	background: darkslategrey;
+	text-align: center;
+	color: white;
+	width: 60px;
+	height: 60px;
+	font-size: 28px;
+	border: 1px solid lightgray;
+	cursor: default;
+}
+td:hover {
+	box-shadow: 0 0 20px lightgray;
+}
+td:active {
+	background: lightseagreen;
+}
+.bg-teal {
+	background: teal;
+}
+.bg-blue{
+	background: dodgerblue;
+}
+.bg-salmon{
+	background: salmon;
+}
+
+/*表格样式结束*/
+
+/*运算结果显示样式*/
+#calcValue {
+	width: 324px;
+	height: 45px;
+	outline: 0;
+	border: 0;
+	box-sizing: border-box;
+	background: darkslategrey;
+	padding: 5px 10px;
+	color: white;
+	font-size: 24px;
+	text-align: right;
+}
+/*运算结果显示样式借宿*/

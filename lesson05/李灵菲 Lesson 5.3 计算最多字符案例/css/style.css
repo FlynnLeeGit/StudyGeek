@@ -1,0 +1,10 @@
+/*自定义样式*/
+.row {
+	margin-top: 20px;
+}
+#objTxt {
+	font-size: 20px;
+}
+#keyCodeTxt{
+	word-break: break-all;
+}

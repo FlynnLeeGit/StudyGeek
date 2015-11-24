@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>计算器案例</title>
+		<link rel="stylesheet" type="text/css" href="css/calc.css" />
+	</head>
+
+	<body>
+		<!--计算器界面容器-->
+		<div class="calculation">
+			<!--计算器表格界面-->
+			<table>
+				<caption>计算器</caption>
+				<tr>
+					<td colspan="4">
+						<input id="calcValue" type="text" placeholder="运算吧~"></input>
+					</td>
+				</tr>
+				<tr>
+					<td onclick="refresh()" class="bg-salmon">C清零</td>
+					<td onclick="char('/')" class="bg-blue">÷</td>
+					<td onclick="char('*')" class="bg-blue">×</td>
+					<td onclick="back()">←</td>
+				</tr>
+				<tr>
+					<td onclick="calc('7')">7</td>
+					<td onclick="calc('8')">8</td>
+					<td onclick="calc('9')">9</td>
+					<td onclick="char('-')" class="bg-blue">-</td>
+				</tr>
+				<tr>
+					<td onclick="calc('4')">4</td>
+					<td onclick="calc('5')">5</td>
+					<td onclick="calc('6')">6</td>
+					<td onclick="char('+')" class="bg-blue">+</td>
+				</tr>
+				<tr>
+					<td onclick="calc('1')">1</td>
+					<td onclick="calc('2')">2</td>
+					<td onclick="calc('3')">3</td>
+					<td onclick="result()" class="bg-teal" rowspan="2">=</td>
+				</tr>
+				<tr>
+					<td onclick="calc('0')" colspan="2">0</td>
+					<td onclick="char('.')">.</td>
+				</tr>
+			</table>
+			<!--计算器表格界面结束-->
+		</div>
+		<script src="js/calc.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
