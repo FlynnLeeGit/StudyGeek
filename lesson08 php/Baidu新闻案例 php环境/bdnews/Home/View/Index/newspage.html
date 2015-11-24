@@ -1,0 +1,14 @@
+<volist id='data' name='arrList'>
+	<div class="news-box">
+		<div class="news-img">
+			<img src="__PUBLIC__/image/front/newslist/{$data.news_img}" />
+		</div>
+		<div class="news-con">
+			<p class="grey fz16">{$data.news_title}</p>
+			<p class="news-desc fz12">{$data.news_content}</p>
+			<span class="news-time fz12">{$data.time_after}</span>
+			<span class="news-label white">{$data.news_label}</span>
+		</div>
+	</div>
+</volist>
+<!--thinkphp volist标签循环遍历数据显示dom-->

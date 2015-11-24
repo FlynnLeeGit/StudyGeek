@@ -1,0 +1,124 @@
+/*导航条样式开始----*/
+
+.navbar {
+	border-radius: 0;
+}
+.topnav {
+	background: #438EB9;
+}
+#user-login a {
+	padding: 8px;
+}
+/*------导航条样式结束*/
+
+article {
+	margin-top: -20px;
+}
+/*边栏样式开始-----*/
+
+.aside .btn-success {
+	border: 5px solid #5CB85C;
+}
+.aside .btn-info {
+	border: 5px solid #5BC0DE;
+}
+.aside .btn-warning {
+	border: 5px solid #F0AD4E;
+}
+.aside .btn-danger {
+	border: 5px solid #D9534F;
+}
+.aside {
+	border-right: 1px solid lightgray;
+}
+.shorcuts {
+	padding: 5px;
+}
+/*------边栏样式结束*/
+/*主体内容样式开始-----*/
+
+.top-menu {
+	border-bottom: 1px solid lightgrey;
+}
+.list-menu {
+	background: transparent;
+	border-bottom: 1px dotted #737373;
+}
+.infobox {
+	border: 1px dotted #737373;
+	padding: 10px 20px 10px 10px;
+}
+.infobox .btn {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.infobox .btn-success {
+	box-shadow: 1px 2px 5px #5CB85C;
+}
+.infobox .btn-info {
+	box-shadow: 1px 2px 5px #5BC0DE;
+}
+.infobox .btn-warning {
+	box-shadow: 1px 2px 5px #F0AD4E;
+}
+.infobox .btn-danger {
+	box-shadow: 1px 2px 5px #D9534F;
+}
+.infobox .btn-primary {
+	box-shadow: 1px 2px 5px #5BC0DE;
+}
+.infobox-number {
+	font-size: 20px;
+	position: absolute;
+	top: 4px;
+	left: 65px;
+}
+.infobox-describe {
+	position: absolute;
+	left: 69px;
+	top: 40px;
+}
+.table-area label {
+	font-size: 12px;
+}
+.input-group {
+	margin-top: 20px;
+}
+
+/*表格区样式*/
+th,
+td {
+	text-align: center;
+	width: 50px;
+}
+.td-title>div:hover,
+.td-content>div:hover {
+	cursor: default;
+}
+.td-content {
+	width: 150px;
+}
+
+.news-img {
+	width: 100px;
+}
+
+
+/*主体内容样式结束*/
+/*固定位置按钮*/
+
+#up-top-btn {
+	position: fixed;
+	right: 1px;
+	bottom: 2px;
+	opacity: 0.8;
+}
+
+#bottom-plus-btn{
+	position: fixed;
+	left: 10%;
+	bottom: 3px;
+	opacity: 0.8;
+	
+}

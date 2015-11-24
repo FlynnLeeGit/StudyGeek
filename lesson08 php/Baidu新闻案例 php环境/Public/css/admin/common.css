@@ -1,0 +1,48 @@
+/*通用样式字体颜色*/
+.white {
+	color: #ffffff;
+}
+.green {
+	color: #69AA46;
+}
+.orange {
+	color: #dd5a43;
+}
+.blue {
+	color: #478fca;
+}
+.black {
+	color: #000;
+}
+.btn {
+	border-radius: 0;
+}
+.clearfix:before {
+	content: "";
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+input[type=checkbox] {
+	-webkit-appearance: none;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #C8C8C8;
+	outline: 0;
+	position: relative;
+}
+input[type=checkbox]:checked::before {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 9px;
+	border-bottom: 3px solid #32A3CE;
+	border-right: 3px solid #32A3CE;
+	-webkit-transform: rotate(45deg);
+	left: 4px;
+	top: 1px;
+}
+input[type=checkbox]:hover {
+	border-color: #FF893C;
+}

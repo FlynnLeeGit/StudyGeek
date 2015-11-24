@@ -1,0 +1,168 @@
+/*全局样式*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 13px;
+}
+body {
+	min-width: 320px;
+}
+/*以下通用样式*/
+
+.fz16 {
+	font-size: 16px;
+}
+.fz12 {
+	font-size: 12px;
+}
+.center {
+	text-align: center;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+.grey {
+	color: #262b31;
+}
+.lightgrey {
+	color: #b8bac0;
+}
+.white {
+	color: #ffffff;
+}
+.bg-skyblue {
+	background: rgb(62, 152, 240);
+}
+.bg-red {
+	background: #e02f2f;
+}
+/*顶部导航样式*/
+
+.top-nav {
+	height: 44px;
+}
+.top-nav img {
+	vertical-align: top;
+}
+.navbar {
+	height: 36px;
+	line-height: 36px;
+}
+.navbar a {
+	text-decoration: none;
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+}
+.navbar .active {
+	text-decoration: underline;
+}
+/*轮播样式*/
+
+.carousel {
+	margin: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.c-wrap {
+	position: absolute;
+	width: 3000px;
+	overflow: hidden;
+}
+.c-wrap img {
+	float: left;
+}
+.c-tabs {
+	position: absolute;
+	list-style-type: none;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+.c-tabs li {
+	display: inline-block;
+	width: 33.3%;
+	height: 5px;
+	float: left;
+	background: #E3E3E3;
+}
+.c-tabs .active {
+	background: rgb(62, 152, 240);
+}
+.list {
+	position: relative;
+}
+/*加载样式*/
+
+.loading-area {
+	z-index: 999;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -42px;
+	text-align: center;
+}
+
+/*新闻列表页样式*/
+.subpage {
+	position: absolute;
+}
+.page2,
+.page3,
+.page4,
+.page5,
+.page6 {
+	display: none;
+}
+
+.news-box {
+	padding: 10px 10px 20px 10px;
+	width: 100%;
+	border-bottom: 1px solid #e4e4e4;
+	display: flex;
+}
+.news-img {
+	flex: 1;
+	display: inline-block;
+}
+.news-img img {
+	width: 100%;
+}
+.news-con {
+	flex: 2;
+	display: inline-block;
+	position: relative;
+}
+.news-con p {
+	padding: 0 15px;
+	max-height: 18px;
+	overflow: hidden;
+}
+.news-con .news-desc {
+	margin-top: 10px;
+	padding-right: 15px;
+	max-height: 14px;
+	color: #b8bac0;
+}
+.news-con .news-time {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	color: #b8bac0;
+	padding: 5px;
+	border-radius: 2px;
+}
+.news-con .news-label {
+	background: #e02f2f;
+	position: absolute;
+	bottom: 0;
+	padding: 5px;
+	border-radius: 3px;
+	right: 30px;
+}

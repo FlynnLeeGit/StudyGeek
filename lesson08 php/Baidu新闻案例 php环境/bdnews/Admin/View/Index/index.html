@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>BaiduNews 后台管理系统首页</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/font-awesome.css" />
+		<!--引入bootstrap框架与字体框架-->
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/admin/common.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/admin/index.css" />
+		<!--引入通用样式与本页样式-->
+	</head>
+
+	<body>
+
+		<!--头部导航栏开始-->
+		<header>
+			<nav class="topnav navbar navbar-default">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<i class="icon-leaf white"></i>
+						<span class="white">Baidu News 新闻后台管理系统</span>
+					</a>
+					<button class="btn navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse">
+						<i class="icon-reorder white"></i>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="nav-collapse">
+					<ul class="nav navbar-nav pull-right">
+						<li id="user-login" class="dropdown">
+							<a class="dropdown-toggle btn btn-info user-login" href="#" data-toggle="dropdown">
+								<img class="img-circle" src="__PUBLIC__/image/admin/user.jpg" />
+								<span class="white">Welcome,{$name}</span>
+								<i class="icon-caret-down white"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="icon-cog"></i>Setting</a></li>
+								<li><a href="#"><i class="icon-user"></i>Profile</a></li>
+								<li class="divider"></li>
+								<li><a href="__URL__/logout"><i class="icon-off"></i>LogOut</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="btn btn-primary" href="#">
+								<i class="icon-tasks white"></i>
+								<span class="badge">4</span>
+							</a>
+						</li>
+						<li>
+							<a class="btn btn-danger" href="#">
+								<i class="icon-bell-alt white"></i>
+								<span class="badge badge-important">8</span>
+							</a>
+						</li>
+						<li>
+							<a class="btn btn-success" href="#">
+								<i class="icon-envelope white"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--头部导航栏结束-->
+
+		<!--主体部分开始-->
+		<article>
+
+			<!--侧边栏开始-->
+			<div class="aside col-md-2 col-sm-4">
+				<div class="shorcuts text-center">
+					<a class="btn btn-success btn-sm" href="#addnews" data-toggle='modal' title="添加"><i class="icon-plus"></i></a>
+					<a class="btn btn-danger btn-sm" href="__URL__/logout"><i class="icon-off" title="登出"></i></a>
+				</div>
+				<div class="aside-menu list-group">
+					<a class="list-group-item active disabled" href="#">
+						<i class="icon-dashboard"></i>&nbsp;
+						<span>主页</span>
+					</a>
+					<a class="list-group-item" href="#addnews" data-toggle='modal'>
+						<i class="icon-list"></i>&nbsp;
+						<span>添加新闻</span>
+						<i class="icon-chevron-right pull-right"></i>
+					</a>
+
+					<!--thinkphp 引入add模版  添加记录模态窗口-->
+					<include file='Index:add' />
+					<!--添加模版结束-->
+
+				</div>
+			</div>
+			<!--侧边栏结束-->
+
+			<!--右边内容区开始-->
+			<div class="page-content col-md-10  col-sm-8">
+
+				<div class="row">
+					<ol class="breadcrumb top-menu">
+						<li>
+							<i class="icon-home black icon-2x"></i>&nbsp;
+							<a href="__URL__/index">首页</a>
+						</li>
+						<li class="active">控制台</li>
+					</ol>
+				</div>
+
+				<ol class="breadcrumb list-menu">
+					<li>
+						<h3 class="blue">控制台</h3></li>
+					<li class="active">查看</li>
+				</ol>
+
+				<div class="alert alert-success alert-dismissible">
+					<i class="icon-ok"></i>
+					<span>欢迎使用
+						<strong>Baidu News后台管理系统(v1.2),</strong>
+					</span>
+					<button class="close" data-dismiss="alert">&times;</button>
+				</div>
+
+
+				<!--数据小计区开始-->
+				<div class="sum-area clearfix">
+					<div class="panel panel-success col-sm-4 col-xs-6">
+						<div class="panel-heading text-center">
+							<i class="icon-circle-blank"></i>
+							<span>新闻总数</span>
+						</div>
+						<div class="panel-body">
+							<button class="btn btn-default btn-block">
+								<div class="active progress-bar progress-bar-success progress-bar-striped" style="width: 100%;">
+									<span>{$countList}条</span>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div class="panel panel-info col-sm-4 col-xs-6">
+						<div class="panel-heading text-center">
+							<i class="icon-signal"></i>
+							<span>最新消息标题</span>
+						</div>
+						<div class="panel-body">
+							<button class="btn btn-primary center-block">{$arrList[0].news_title}</button>
+						</div>
+					</div>
+					<div class="panel panel-default col-sm-4 col-xs-6">
+						<div class="panel-heading text-center">
+							<i class="icon-download-alt"></i>
+							<span>最近添加记录时间</span>
+						</div>
+						<div class="panel-body">
+							<button class="btn center-block">{$arrList[0].news_time}</button>
+						</div>
+					</div>
+				</div>
+				<!--数据小计区结束-->
+
+				<!--表格区域开始-->
+				<div class="table-area col-xs-12">
+					<h4>
+						<i class="icon-star orange"></i>
+						<span class="blue">新闻列表</span>
+						<button class="btn btn-sm pull-right" data-toggle="collapse" data-target="#table1">
+							<i class="icon-angle-down"></i>
+						</button>
+				    </h4>
+
+					<div class="collapse" id="table1">
+						<table class="table table-hover table-striped table-condensed table-responsive">
+							<tr>
+								<th><i class="icon icon-edit"></i> 操作</th>
+								<th><i class="icon-caret-right blue"></i> 标题</th>
+								<th><i class="icon-caret-right blue"></i> 内容</th>
+								<th><i class="icon-caret-right blue"></i> 标签</th>
+								<th><i class="icon-caret-right blue"></i> 新闻类别</th>
+								<th><i class="icon-caret-right blue"></i> 时间</th>
+								<th><i class="icon-caret-right blue"></i> 图片</th>
+							</tr>
+
+							<volist id='data' name='arrList'>
+								<tr>
+									<td>
+										<a class="text-danger" href="__URL__/del/id/{$data.id}">删除</a>
+										<br />
+										<a class="edit-link" class="text-info" data-id='{$data.id}' href="javascript:;" data-toggle='modal'>编辑</a>
+									</td>
+									<td class="td-title">
+										<div data-toggle='tooltip' data-placement='bottom' title='{$data.news_title}'>{$data.news_title}</div>
+									</td>
+									<td class="td-content">
+										<div data-toggle='tooltip' data-placement='bottom' title='{$data.news_content}'>{$data.news_content}</div>
+									</td>
+									<td>{$data.news_label}</td>
+									<td>{$data.news_type}</td>
+									<td>{$data.news_time}</td>
+									<td><img class="news-img" src="__PUBLIC__/image/front/newslist/{$data.news_img}" /></td>
+								</tr>
+							</volist>
+						</table>
+					</div>
+				</div>
+				<!--表格区域结束-->
+
+				<!--引入编辑modal模版-->
+				<div class="modal fade" id="editnews">
+
+				</div>
+				<!--编辑modal结束-->
+			</div>
+			<!--右边内容区结束-->
+		</article>
+
+		<!--主体部分结束-->
+
+		<!--固定返回顶部按钮与添加按钮-->
+		<a id="up-top-btn" class="btn btn-warning" href="#">
+			<i class="icon-4x icon-double-angle-up"></i>
+		</a>
+
+		<a id="bottom-plus-btn" class="btn btn-success" href="#addnews" data-toggle='modal'>
+			<i class="icon-3x icon-plus"></i>
+			<p>添加</p>
+		</a>
+
+		<script src="__PUBLIC__/js/jquery.js"></script>
+		<script src="__PUBLIC__/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="__PUBLIC__/js/commonFn.js" type="text/javascript" charset="utf-8"></script>
+		<!--引入Jquery库与bootstrapJS库-->
+		<script type="text/javascript">
+			var appPath='__URL__';
+		</script>
+		<!--thinkphp的模版变量不支持外部调用，此处将期保存为js全局变量,以供外部js引用-->
+		<script src="__PUBLIC__/js/admin/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
