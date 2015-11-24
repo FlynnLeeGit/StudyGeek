@@ -1,0 +1,45 @@
+p {
+	color:
+}
+#table {
+	font-size: 1.8em;
+	border-collapse: collapse;
+	color: black;
+	text-shadow: 1px 1px 1px gray;
+	box-shadow: 2px 1px 50px gray;
+	display: inline-block;
+}
+td,
+th {
+	border: 2px solid #666666;
+	width: 100px;
+}
+td {
+	height: 50px;
+}
+p {
+	font-family: simhei;
+	text-shadow: 1px 1px 1px gray;
+	font-size: 2em;
+}
+#content {
+	text-align: center;
+}
+thead tr,
+tfoot tr:hover {
+	cursor: default;
+}
+thead tr,
+tfoot tr {
+	color: white;
+	background-color: indigo;
+}
+.subject {
+	color: indigo;
+	font-size: 0.9em;
+}
+.subject:hover {
+	box-shadow: 0px 0px 20px darkblue;
+	border: transparent;
+	cursor: default;
+}

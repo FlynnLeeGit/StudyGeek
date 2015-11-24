@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Table Demo</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+
+		<div id="content">
+			<!--标题-->
+			<p><strong>课程表案例</strong></p>
+
+			<!--表格开始-->
+			<table id="table">
+				<!--表格页头-->
+				<thead>
+					<tr>
+						<th colspan="2">时间</th>
+						<th>周一</th>
+						<th>周二</th>
+						<th>周三</th>
+						<th>周四</th>
+						<th>周五</th>
+						<th>周六</th>
+						<th>周日</th>
+					</tr>
+				</thead>
+				<!--表格页头结束-->
+
+				<!--表格主体开始 js生成-->
+				<tbody>
+					<tr>
+						<td rowspan="4">上午</td>
+						<td>第1节</td>
+					</tr>
+					<tr>
+						<td>第2节</td>
+					</tr>
+					<tr>
+						<td>第3节</td>
+					</tr>
+					<tr>
+						<td>第4节</td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">下午</td>
+						<td>第1节</td>
+					</tr>
+					<tr>
+						<td>第2节</td>
+					</tr>
+					<tr>
+						<td>第3节</td>
+					</tr>
+					<tr>
+						<td>第4节</td>
+					</tr>
+				</tbody>
+				<!--表格主体结束-->
+
+				<!--表格页脚-->
+				<tfoot>
+					<tr>
+						<th colspan="2">时间</th>
+						<th>周一</th>
+						<th>周二</th>
+						<th>周三</th>
+						<th>周四</th>
+						<th>周五</th>
+						<th>周六</th>
+						<th>周日</th>
+					</tr>
+				</tfoot>
+				<!--页脚结束-->
+			</table>
+			<!--表格结束-->
+		</div>
+
+
+         <!--生成随机课程目项js-->
+		<script src="js/table.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
