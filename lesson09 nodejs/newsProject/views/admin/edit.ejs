@@ -1,0 +1,76 @@
+<div class="modal fade" id="editNews">
+	<div class="modal-dialog">
+		<form id="edit-form" target="frameFile" action="/admin/update" method="post" enctype="multipart/form-data">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss='modal'>
+						<span>&times;</span>
+					</button>
+					<h4 class="modal-title"><i class="icon icon-plus"></i> Edit Records</h4>
+				</div>
+				<div class="modal-body">
+
+					<div class="input-group hidden">
+						<span class="input-group-addon ">新闻id</span>
+						<input type="text" class="form-control editId" name='id' />
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-addon">新闻标题</span>
+						<input type="text" class="form-control editTitle" name='news_title' required />
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-addon">新闻类别</span>
+						<select name="news_type_id" class="form-control editType">
+							<option value="0" class="hidden">占位索引用</option>
+							<option value="1">推荐</option>
+							<option value="2">百家</option>
+							<option value="3">本地</option>
+							<option value="4">娱乐</option>
+							<option value="5">军事</option>
+						</select>
+					</div>
+
+					<div class="input-group">
+						<div class="input-group-addon">新闻内容</div>
+						<textarea class="form-control editContent" name="news_content" rows="10" required></textarea>
+					</div>
+					<div class="input-group">
+						<div class="input-group-addon">新闻标签</div>
+						<select name="news_label_id" class="form-control editLabel">
+							<option value="0" class="hidden">占位索引用</option>
+							<option class="text-danger" value="1">置顶</option>
+							<option class="text-primary" value="2">百家原创</option>
+							<option class="text-primary" value="3">为你优选</option>
+							<option class="text-danger" value="4">腾讯要闻</option>
+							<option class="text-danger" value="5">新浪要闻</option>
+							<option class="text-danger" value="6">凤凰要闻</option>
+						</select>
+					</div>
+
+					<div class="input-group">
+						<div class="input-group-addon">新闻图片</div>
+						<img class="editImg" style="width: 300px;" />
+					</div>
+
+					<div class="input-group">
+						<div class="input-group-addon">选择新的图片(覆盖)</div>
+						<input name="news_img" class="form-control" type="file" />
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<label class="text-success editMsg editMsg4" style="display: none;"><i class="icon-thumbs-up"></i>更新成功！</label>
+					<label class="text-warning editMsg editMsg1" style="display: none;"><i class="icon-thumbs-down"></i>文件大于1M！请重新选择</label>
+					<label class="text-warning editMsg editMsg2" style="display: none;"><i class="icon-thumbs-down"></i>格式不正确！请选择png jpeg gif bmp 格式</label>
+					
+					<button type="submit" class="btn btn-success btn-lg"><i class="icon icon-save"></i> 确认更新</button>
+					<button type="button" data-dismiss='modal' class="btn btn-danger btn-lg">关闭</button>
+				</div>
+
+				<iframe width="0px" height="0px" name="frameFile"></iframe>
+			</div>
+		</form>
+	</div>
+</div>

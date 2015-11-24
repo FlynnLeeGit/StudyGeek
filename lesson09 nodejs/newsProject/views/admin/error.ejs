@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>错误页面</title>
+		<style type="text/css">
+			*{
+				font-family: "微软雅黑";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>: (</h1>
+		<h1><%=error%></h1>
+		<h3><span id="time"><%=time%></span>秒后跳转</h3>
+	</body>
+	<script type="text/javascript">
+		var tEle = document.getElementById("time");
+		var t = '<%=time%>';
+		setInterval(function() {         //t秒后跳转前一步
+			if (t > 0) {
+				t--;
+				tEle.innerHTML = t;
+			} else {
+				window.history.back(-1);
+			}
+		}, 1000);
+	</script>
+</html>

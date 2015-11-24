@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>百度新闻</title>
+		<link rel="stylesheet" href="/css/front/bdnews.css" />
+		<link rel="stylesheet" type="text/css" href="/css/front/bdicon.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!--导航区-->
+		<nav class="bg-skyblue">
+			<div class="top-nav center">
+				<a class="pull-left" href=""><i class="bdicon bdicon_logo"></i></a>
+				<a class="pull-left" href=""><i class="bdicon bdicon_account"></i></a>
+				<a href=""><img src="/image/front/bdnewlogo.png" /></a>
+				<a class="pull-right" href=""><i class="bdicon bdicon_search"></i></a>
+				<a class="pull-right" href=""><i class="bdicon bdicon_plus"></i></a>
+			</div>
+			<div class="navbar bg-skyblue center">
+				<a class="active fz16 white" href="#">推荐</a>
+				<span class="white">|</span>
+				<a class="fz16 white" href="#">百家</a>
+				<span class="white">|</span>
+				<a class="fz16 white" href="#">本地</a>
+				<span class="white">|</span>
+				<a class="fz16 white" href="#">娱乐</a>
+				<span class="white">|</span>
+				<a class="fz16 white" href="#">军事</a>
+			</div>
+		</nav>
+		
+		<!--加载区 仅在ajax时使用-->
+		<div class="loading-area">
+			<img src="/image/loading.gif" />
+			<p>数据加载中...</p>
+		</div>
+		
+
+		<!--文章主体开始-->
+		<article>
+			<!--轮播图片区-->
+			<div class="carousel">
+				<div class="c-wrap">
+					<img src="/image/front/carousel/c1.png" />
+					<img src="/image/front/carousel/c2.png" />
+					<img src="/image/front/carousel/c3.png" />
+					<img src="/image/front/carousel/c1.png" />
+				</div>
+				<ul class="c-tabs">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<!--新闻列表区 ajax异步请求-->
+			<div class="list">
+				<div class="subpage page1">
+                         
+				</div>
+
+				<div class="subpage page2">
+
+				</div>
+
+				<div class="subpage page3">
+
+				</div>
+
+				<div class="subpage page4">
+
+				</div>
+
+				<div class="subpage page5">
+
+				</div>
+
+			</div>
+
+		</article>
+		<!-------------文章主体结束-->
+	</body>
+	<script src="/js/commonFn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/front/index.js" type="text/javascript" charset="utf-8"></script> 
+</html>

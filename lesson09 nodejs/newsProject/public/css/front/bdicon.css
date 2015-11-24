@@ -1,0 +1,41 @@
+/*百度新闻页面图标*/
+
+.bdicon {
+	background: url("/image/front/bdicon.png") top left no-repeat;
+	display: inline-block;
+	transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	width: 40px;
+	height: 40px;
+}
+.bdicon_account{
+	background-position: -10px -10px;
+}
+.bdicon_favorite{
+	background-position: -10px -60px;
+}
+.bdicon_home{
+	background-position: -10px -110px;
+}
+.bdicon_download {
+	background-position: -10px -160px;
+}
+.bdicon_setting {
+	background-position: -10px -210px;
+}
+.bdicon_leftarrow{
+	background-position: -10px -260px;
+}
+.bdicon_plus {
+	background-position: -10px -310px;
+}
+.bdicon_square {
+	background-position: -10px -360px;
+}
+.bdicon_logo {
+	background-position: -10px -410px;
+}
+.bdicon_search{
+	background-position: -10px -460px;
+}
