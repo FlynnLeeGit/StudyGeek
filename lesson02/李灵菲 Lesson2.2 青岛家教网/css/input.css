@@ -1,0 +1,135 @@
+			/*伪类checkbox与radio输入框开始*/
+			
+			input[type=checkbox],
+			input[type=radio] {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				/*删除默认样式*/
+				
+				width: 20px;
+				height: 20px;
+				border: 3px solid deepskyblue;
+				vertical-align: bottom;
+				font-size: 1em;
+				position: relative;
+				outline: none;
+			}
+			input[type=radio] {
+				border-radius: 20px;
+				/*单选框为圆形*/
+			}
+			input[type=checkbox]:before {
+				content: "";
+				width: 20px;
+				height: 8px;
+				position: absolute;
+				top: -3px;
+				border: 2px solid deepskyblue;
+				border-top: transparent;
+				border-right: transparent;
+				-webkit-transform: rotate(-45deg);
+				opacity: 0;
+			}
+			input[type=radio]:before {
+				content: "";
+				width: 10px;
+				height: 10px;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				background-color: deepskyblue;
+				border-radius: 10px;
+				box-shadow: 0 0 5px deepskyblue;
+				opacity: 0;
+			}
+			input[type=checkbox]:checked:before,
+			input[type=radio]:checked:before {
+				opacity: 1;
+			}
+			input[type=checkbox]:hover,
+			input[type=radio]:hover {
+				box-shadow: 0 0 2px deepskyblue;
+			}
+			/*伪类checkbox与radio框结束*/
+			/*伪类text与radio与number与email输入框样式开始*/
+			
+			input[type=text],
+			input[type=password],
+			input[type=number],
+			input[type=email] {
+				outline: none;
+				border: 2px solid lightgrey;
+				border-radius: 3px;
+				padding: 3px;
+				font-size: 1em;
+				color: #333333;
+			}
+			input[type=text]:hover,
+			input[type=password]:hover,
+			input[type=number]:hover,
+			input[type=email]:hover {
+				box-shadow: 0 0 3px lightblue;
+			}
+			input[type=text]:focus,
+			input[type=password]:focus,
+			input[type=number]:focus,
+			input[type=email]:focus {
+				border: 2px solid lightblue;
+				box-shadow: 0 0 3px lightblue;
+			}
+			/*伪类text与radio与number与email输入框样式结束*/
+			/*textarea模式样式修改开始*/
+			
+			textarea {
+				outline: none;
+				border: none;
+				border: 2px solid lightgrey;
+				padding: 3px;
+				font-size: 1em;
+				color: #333333;
+				border-radius: 3px;
+			}
+			textarea:hover,
+			textarea:focus {
+				box-shadow: 0 0 5px lightblue;
+			}
+			textarea:focus {
+				border: 2px solid lightblue;
+			}
+			/*textarea模式样式修改结束*/
+			/*修改range默认样式*/
+			
+			input[type=range] {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				width: 200px;
+				height: 2px;
+				background-color: lightskyblue;
+				box-shadow: 0px 0px 5px lightskyblue;
+				position: relative;
+				border-radius: 5px;
+				outline: none;
+			}
+			/*修改range样式结束*/
+			
+			select {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				width: 120px;
+				height: 25px;
+				outline: none;
+				position: relative;
+				border: 2px solid lightgray border-radius: 5px;
+				font-size: 16px;
+				box-shadow: 0 0 3px lightblue inset;
+				color: #666666;
+			}
+			select:before {
+				width: 10px;
+				height: 10px;
+				border: 20px solid dodgerblue;
+				position: absolute;
+			}
+			select:hover {
+				box-shadow: 0 0 5px lightblue;
+			}

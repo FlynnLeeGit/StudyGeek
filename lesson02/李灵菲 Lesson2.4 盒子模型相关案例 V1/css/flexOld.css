@@ -1,0 +1,63 @@
+/*居中效果样式*/
+.container {
+	background-color: lightblue;
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+	border: 1px solid black;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+
+/*横向排布样式*/
+.first {
+	height: 190px;
+	background-color: green;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+}
+.second {
+	height: 180px;
+	background-color: cornflowerblue;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+}
+.third {
+	height: 200px;
+	background-color: orange;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+}
+.con {
+	margin-top: 50px;
+	display: -webkit-box;
+	background-color: lightgrey;
+}
+
+/*纵向排布样式*/
+.four {
+	background-color: green;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+	-webkit-box-flex: 1;
+}
+.five {
+	background-color: cornflowerblue;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+	-webkit-box-flex: 2;
+}
+.six {
+	background-color: orange;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+	-webkit-box-flex: 3;
+}
+.con2 {
+	background-color: lightgrey;
+	margin-top: 50px;
+	height: 300px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}

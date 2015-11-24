@@ -1,0 +1,61 @@
+body {
+	
+	font-family: arial;
+	font-size: 16px;
+	color: indigo;
+	
+}
+.container {
+	width: 768px;
+	margin: 0 auto;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 30px;
+}
+.header,
+.article {
+	padding: 0 40px;
+}
+.form {
+	text-align: right;
+	margin-top: 20px;
+}
+.form a {
+	margin: 0 10px;
+}
+.form a:link,
+.form a:visited,
+.form a:hover,
+.form a:active {
+	text-decoration: none;
+	color: pink;
+}
+.article {
+	margin-top: 60px;
+}
+table {
+	display: inline-block;
+	border-collapse: collapse;
+}
+th,
+td {
+	border-bottom: 1px solid lightslategray;
+}
+input[type=text] {
+	width: 200px;
+}
+caption {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: black;
+}
+th {
+	height: 40px;
+	font-size: 1.2rem;
+}
+tr td:nth-child(1) {
+	text-align: center;
+	font-weight: bold;
+	padding: 2px;
+}

@@ -1,0 +1,57 @@
+/*横向排布样式*/
+.first {
+	height: 190px;
+	background-color: green;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+	flex: 1;
+}
+.second {
+	height: 180px;
+	background-color: cornflowerblue;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+	flex: 2;
+}
+.third {
+	height: 200px;
+	background-color: orange;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+	flex: 3;
+}
+.con {
+	background-color: lightgrey;
+	margin-top: 50px;
+	display: -webkit-flex;
+}
+
+/*纵向排布样式*/
+.four {
+	background-color: green;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+	flex: 1;
+	order: 3;
+}
+.five {
+	background-color: cornflowerblue;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+	flex: 2;
+	order: 2;
+}
+.six {
+	background-color: orange;
+	box-shadow: 1px 1px 5px gray;
+	text-align: center;
+	flex: 3;
+	order: 1;
+}
+.con2 {
+	background-color: lightgrey;
+	margin-top: 50px;
+	height: 300px;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+}

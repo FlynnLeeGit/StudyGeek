@@ -1,0 +1,65 @@
+body {
+	background-image: url(../img/bg.jpg);
+}
+div {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	/*文本对齐属性*/
+	
+	line-height: 100px;
+	font-family: "arial black";
+	/*此处字体相关属性*/
+	
+	font-size: 20px;
+	opacity: 0.9;
+	color: transparent;
+	text-shadow: 0 0 1px white;
+	/*设置字体阴影*/
+}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/*容器绝对定位位置*/
+	
+	margin-top:-150px;
+	margin-left:-150px;
+	/*修改margin让其对齐*/
+}
+.top {
+	left: 100px;
+	top: 0;
+	background-color: indigo;
+	box-shadow: 0 -5px 20px indigo;
+}
+.left {
+	left: 0;
+	top: 100px;
+	background-color: orange;
+	box-shadow: -5px 0 20px orange;
+}
+.center {
+	box-shadow: 0 0 4px darkgrey inset;
+	left: 100px;
+	top: 100px;
+}
+.center img {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	/*图标垂直居中*/
+}
+.right {
+	left: 200px;
+	top: 100px;
+	background-color: dodgerblue;
+	box-shadow: 5px 0 20px dodgerblue;
+}
+.bottom {
+	left: 100px;
+	top: 200px;
+	background-color: teal;
+	box-shadow: 0 5px 20px teal;
+}

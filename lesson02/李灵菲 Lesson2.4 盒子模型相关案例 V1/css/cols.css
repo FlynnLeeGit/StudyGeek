@@ -1,0 +1,39 @@
+div {
+	padding: 10px;
+}
+.colTest1 {
+	-webkit-columns: 200px 3;
+	-moz-columns: 200px 3;
+	columns: 200px 3;
+	
+	border: 1px solid indigo;
+	text-indent: 2em;
+	padding: 5px;
+	box-shadow: 0 0 10px gray;
+}
+.colTest2 {
+	-webkit-columns: 200px;
+	-moz-columns: 200px;
+	columns: 200px;
+	
+	border: 1px solid black;
+}
+.colTest3 {
+	-webkit-columns: 200px;
+	-moz-columns: 200px;
+	columns: 200px;
+	
+	-webkit-column-gap: 100px;
+	-moz-column-gap: 100px;
+	column-gap: 100px;
+	
+	-webkit-column-rule-style: dotted;
+	-moz-column-rule-style: dotted;
+	column-rule-style: dotted;
+	
+	-webkit-column-rule-color: orangered;
+	-moz-column-rule-color: orangered;
+	column-rule-color: orangered;
+	
+	border: 1px solid black;
+}

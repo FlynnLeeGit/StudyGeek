@@ -1,0 +1,41 @@
+/*容器样式 注意宽高*/
+.inner {
+	width: 100px;
+	height: 100px;
+	overflow: auto;
+	padding: 50px;
+	margin: 50px;
+	border: 10px solid indigo;
+	text-align: center;
+	background-color: lightseagreen;
+	display: inline-block;
+}
+.outer {
+	background-color: cornflowerblue;
+	display: inline-block;
+}
+
+/*内容区样式*/
+.content {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+p{
+	color: white;
+	position: absolute;
+	font-size: 12px;
+}
+
+/*注释*/
+#txt1 {
+	top: 95px;
+}
+#txt2 {
+	top: 130px;
+	left: 60px;
+}
+#txt3 {
+	top: 160px;
+	left: 70px;
+}

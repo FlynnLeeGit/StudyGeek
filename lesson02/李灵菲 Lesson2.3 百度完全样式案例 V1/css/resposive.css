@@ -1,0 +1,59 @@
+/*此为自适应css样式*/
+
+@media only screen and (max-width: 800px) {
+	.nav {
+		left: 335px;
+	}
+	.foot {
+		left: 50px;
+	}
+	.body {
+		left: 80px;
+	}
+	.more{
+		left: 712px;
+	}
+}
+/*以上小于800px宽度时候*/
+
+
+
+@media only screen and (min-width: 800px) {
+	.nav {
+		right: 15px;
+	}
+	.foot {
+		left: 50%;
+		margin-left: -350px;
+	}
+	.body {
+		left: 50%;
+		margin-left: -320px;
+	}
+	.more{
+		right: 0;
+	}
+}
+/*以上大于800px宽度时候*/
+
+@media only screen and (max-height: 600px) {
+	.foot {
+		top: 450px;
+	}
+	.body {
+		top: 40px;
+	}
+}
+/*以上小于600px高度时候*/
+
+@media only screen and (min-height: 600px) {
+	.foot {
+		bottom: 50px;
+	}
+	.body {
+		bottom: 62%;
+	}
+}
+/*以上大于600px高度时候*/
+
+

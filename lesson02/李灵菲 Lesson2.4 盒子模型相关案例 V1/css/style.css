@@ -1,0 +1,25 @@
+	/*网页整体样式 字体风格 超链接样式等*/
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: "微软雅黑";
+		background-color: mintcream;
+	}
+	a {
+		line-height: 2;
+		font-size: 20px;
+		font-weight: bold;
+		display: block;
+		color: darkgray;
+		text-decoration: none;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	a:hover {
+		color: cornflowerblue;
+		box-shadow: 0 0 2px gray;
+		text-shadow: 0 0 1px cornflowerblue;
+	}
+	a:visited {
+		color: red;
+	}

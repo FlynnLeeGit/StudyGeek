@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial;
+}
+/*头部样式开始*/
+
+.nav {
+	font-size: 13px;
+	margin-top: 23px;
+	width: 450px;
+	text-align: right;
+	position: absolute;
+}
+.nav a {
+	margin-left: 14px;
+	color: #333333;
+	font-weight: bold;
+}
+.nav a:link,
+.nav a:visited {
+	text-decoration: underline;
+}
+.nav a:hover,
+.nav a:active {
+	color: #0000D5;
+}
+/*设置内容区样式开始*/
+
+.setting {
+	list-style-type: none;
+	position: absolute;
+	z-index: 2;
+	top: 23px;
+	right: 61px;
+	border: 1px solid #d3d3d3;
+	box-shadow: 0 0 1px #D3D3D3;
+	display: none;
+}
+.setting li {
+	text-align: center;
+	padding: 5px 9px;
+}
+.setting li:hover {
+	background-color: #1e90ff;
+	cursor: pointer;
+	color: #ffffff;
+}
+.setting::before {
+	content: "";
+	border: 8px solid transparent;
+	position: absolute;
+	border-bottom-color: #d3d3d3;
+	left: 27px;
+	top: -16px;
+}
+.setting::after {
+	content: "";
+	border: 6px solid transparent;
+	position: absolute;
+	border-bottom-color: #ffffff;
+	left: 29px;
+	top: -12px;
+}
+/*设置内容区样式结束*/
+/*-----------------------------------------*/
+/*更多产品内容区样式开始*/
+
+#moreBtn {
+	background-color: #1e90ff;
+	padding: 5px;
+	margin-left: 19px;
+	color: #ffffff;
+	cursor: default;
+}
+
+.more {
+	position: absolute;
+	z-index: 2;
+	height: 99%;
+	width: 88px;
+	list-style-type: none;
+	background-color: #f9f9f9;
+	border: 1px solid #d3d3d3;
+	border-top: none;
+	text-align: center;
+	display: none;
+}
+.more img {
+	display: block;
+	margin: 0 auto;
+}
+.more a:link,
+.more a:visited {
+	color: #666666;
+	font-size: 12px;
+	text-decoration: none;
+}
+.more a:hover {
+	text-decoration: underline;
+}
+.more a:active {
+	color: #0000ff;
+}
+.more li:first-child {
+	font-size: 13px;
+	color: #333333;
+	padding-top: 22px;
+	cursor: default;
+}
+.spliter {
+	margin: 11px auto;
+	width: 60px;
+	height: 1px;
+	background-color: #F0F0F0;
+}
+/*更多产品内容样式区域结束*/
+/*----------------------------------------------*/
+/*主内容区搜索框及按钮样式开始*/
+
+.body {
+	position: absolute;
+	text-align: center;
+}
+.search {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 26px;
+	width: 640px;
+}
+#searchBox {
+	float: left;
+	padding-left: 8px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	width: 531px;
+	height: 20px;
+	outline: none;
+	line-height: 20px;
+	font-size: 16px;
+	border: 1px solid #B8B8B8;
+	border-right-style: none;
+}
+#searchBtn {
+	background-color: #4791FF;
+	font-size: 15px;
+	color: #ffffff;
+	float: left;
+	border: none;
+	width: 100px;
+	height: 36px;
+	outline: none;
+}
+#searchBtn:hover {
+	cursor: pointer;
+	background-color: #3075dc;
+}
+#searchBtn:active {
+	background-color: #3075DC;
+}
+#searchBox:hover {
+	border-color: #999999;
+	transition: all 0.3s ease-in;
+}
+#searchBox:focus {
+	border-color: #4791FF;
+}
+/*主内容区搜索框及按钮样式结束*/
+/*-----------------------------------------*/
+/*脚部关于区域样式开始*/
+
+.foot {
+	width: 700px;
+	position: absolute;
+	font-size: 12px;
+	height: 100px;
+	text-align: center;
+}
+.aboutBaidu {
+	margin: 16px 0 5px 0;
+}
+.aboutBaidu a {
+	margin: 10px;
+}
+.aboutBaidu a:link,
+.aboutBaidu a:visited,
+.aboutBaidu a:hover {
+	color: #0000ff;
+}
+.aboutBaidu a:active {
+	color: #ff4500;
+}
+.about {
+	color: #666666;
+}
+.about a:link,
+.about a:hover,
+.about a:active,
+.about a:visited {
+	color: #666666;
+}
+/*脚部关于区域样式结束*/
+/*----------------------------*/
+
